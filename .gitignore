@@ -1,0 +1,27 @@
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+.class
+*.class
+
+### VS Code ###
+.vscode/
+
+### Office ###
+*.tmp
+~$*.doc*
+~$*.xls*
+*.xlk
+~$*.ppt*
+~$*
