@@ -20,6 +20,9 @@ import java.util.List;
     string.replace(...)
     string.startsWith(...)
     string.endsWith(...)
+    string.length(...)
+    string.charAt(...)
+    String.format(...) -> static
  */
 
 public class Run {
@@ -31,10 +34,11 @@ public class Run {
 
     public static void main(String[] args) {
 
+        //gotfather'ı imDB de ara
         String htmlContent = getHtmlContentFromGivenUrl(SEARCH_SITE_URL);
+        //System.out.println("htmlContent : " + htmlContent);
 
-        System.out.println("htmlContent : " + htmlContent);
-
+        //sonuç bulunamadı HTML içeriği dönerse devam etme
         if (htmlContent.contains(SEARCH_RESULT_NOT_FOUND_KEYWORD)) {
             System.out.println("*** Aranan Film Bulunamadı");
             return;
@@ -42,20 +46,44 @@ public class Run {
 
         //arama sonucunda gelen HTML içinden filmlerin ve linklerinin olduğu kısmı al
         String filmListPart = getFilmListPartOfHtmlContent(htmlContent);
-        System.out.println("filmListPart : " + filmListPart);
+        //System.out.println("filmListPart : " + filmListPart);
 
         //linklerin olduğu HTML content içinden href kısımlarını base_url ile ilişkilendirerek al
         List<String> wholeLinks = getAllFilmLinksFromGivenContent(filmListPart);
-        System.out.println("wholeLinks : " + wholeLinks);
+        //System.out.println("wholeLinks : " + wholeLinks);
 
+        //link bulamazsa devam etme
         if (CollectionUtils.isEmpty(wholeLinks)) {
             System.out.println("*** film linki bulunamadı");
             return;
         }
 
+        //Bulunan film linkleri içinden ilk linkin içeriğini çek
+        String filmDetailHtml = getHtmlContentFromGivenUrl(wholeLinks.get(0));
+        System.out.println("filmDetailHtml : " + filmDetailHtml);
+        
+        //filmin başlığını detail ekranından al
+        String title = getFilmTitle(filmDetailHtml);
+        System.out.println("title : " + title);
+
+    }
+
+    private static String getFilmTitle(String filmDetailHtml) {
+        String startPattern = "<div class=\"title_wrapper\"><h1 class=\"\">";
+        int startIndex = filmDetailHtml.indexOf(startPattern);
+        int endIndex = filmDetailHtml.indexOf("<span id=\"titleYear\">");
+
+        String title = "";
+
+        for (int i = startIndex + startPattern.length(); i < endIndex; i++) {
+            title += filmDetailHtml.charAt(i);
+        }
+        title = title.replace("&nbsp;", "");
+        return title;
     }
 
     private static String getHtmlContentFromGivenUrl(String siteUrl) {
+        System.out.println(String.format("fetching content with given url : %s", siteUrl));
         URL url;
         try {
             // get URL content
@@ -87,14 +115,14 @@ public class Run {
     private static List<String> getAllFilmLinksFromGivenContent(String filmListPart) {
         List<String> wholeLinks = new ArrayList<String>();
         String[] resultLinks = filmListPart.split("<td class=\"result_text\">");
+
         for (int i = 0; i < resultLinks.length; i++) {
-            System.out.println("resultLinks : " + resultLinks[i]);
             String linkPrefix = "href=\"";
             int startIndex = resultLinks[i].indexOf(linkPrefix);
             int endIndex = resultLinks[i].indexOf(">", startIndex);
             String link = resultLinks[i].substring(startIndex + linkPrefix.length(), endIndex);
-            System.out.println("link : " + link);
             link = link.replace("\" ", "");
+
             if (link.startsWith("/") && link.endsWith("/")) {
                 wholeLinks.add(BASE_SITE_URL + link);
             }
@@ -104,17 +132,18 @@ public class Run {
     }
 
     private static String getFilmListPartOfHtmlContent(String result) {
-        String filmListPartRes = null;
 
-        String findMoreMatchersDiv = "<div class=\"findMoreMatches\">";//<div class="findMoreMatches"> <a href="/find?q=godfather&s=tt">More title matches</a>
         String findSectionHeader = "<h3 class=\"findSectionHeader\"><a name=\"tt\"></a>Titles</h3>";//<div class="findSection"><h3 class="findSectionHeader"><a name="tt"></a>Titles</h3><table
+        String findMoreMatchersDiv = "<div class=\"findMoreMatches\">";//<div class="findMoreMatches"> <a href="/find?q=godfather&s=tt">More title matches</a>
+
+        //iki index arasındaki veri bulunan filmlerin HTML içeriğidir
         if (result.contains(findSectionHeader) && result.contains(findMoreMatchersDiv)) {
 
-            int endIndex = result.indexOf(findMoreMatchersDiv);
             int startIndex = result.indexOf(findSectionHeader);
-            filmListPartRes = result.substring(startIndex, endIndex);
+            int endIndex = result.indexOf(findMoreMatchersDiv);
+            return result.substring(startIndex, endIndex);
 
         }
-        return filmListPartRes;
+        return null;
     }
 }
