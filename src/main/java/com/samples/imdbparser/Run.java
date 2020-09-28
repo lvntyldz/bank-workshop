@@ -11,6 +11,17 @@ import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+    kodlamada kullanılan string fonksiyonları
+    string.indexOf(...)
+    string.contains(...)
+    string.substring(...)
+    string.split(...)
+    string.replace(...)
+    string.startsWith(...)
+    string.endsWith(...)
+ */
+
 public class Run {
 
     private static final String BASE_SITE_URL = "https://www.imdb.com";
@@ -37,11 +48,11 @@ public class Run {
         List<String> wholeLinks = getAllFilmLinksFromGivenContent(filmListPart);
         System.out.println("wholeLinks : " + wholeLinks);
 
-
         if (CollectionUtils.isEmpty(wholeLinks)) {
             System.out.println("*** film linki bulunamadı");
             return;
         }
+
     }
 
     private static String getHtmlContentFromGivenUrl(String siteUrl) {
