@@ -14,6 +14,7 @@ import java.util.List;
 /*
     kodlamada kullanılan string fonksiyonları
     string.indexOf(...)
+    string.lastIndexOf(...)
     string.contains(...)
     string.substring(...)
     string.split(...)
@@ -69,6 +70,18 @@ public class Run {
         String rating = getFilmRating(filmDetailHtml);
         System.out.println("rating : " + rating);
 
+        String directorName = getFilmDirector(filmDetailHtml);
+        System.out.println("directorName : " + directorName);
+    }
+
+    private static String getFilmDirector(String filmDetailHtml) {
+        String searchPattern = "Director:";
+        int startIndex = filmDetailHtml.indexOf(searchPattern);
+        int endIndex = filmDetailHtml.indexOf("</a>", startIndex);
+        String directorPart = filmDetailHtml.substring(startIndex, endIndex);
+        String directorNameSearchPattern = ">";
+        int startIndexDirectorName = directorPart.lastIndexOf(directorNameSearchPattern);
+        return directorPart.substring(startIndexDirectorName + directorNameSearchPattern.length());
     }
 
     private static String getFilmRating(String filmDetailHtml) {
@@ -77,8 +90,7 @@ public class Run {
         int startIndex = filmDetailHtml.indexOf(searchPattern);
         int endIndex = filmDetailHtml.indexOf(searchEndPattern, startIndex);
 
-        String rating = filmDetailHtml.substring(startIndex + searchPattern.length(), endIndex);
-        return rating;
+        return filmDetailHtml.substring(startIndex + searchPattern.length(), endIndex);
     }
 
     private static String getFilmTitle(String filmDetailHtml) {
