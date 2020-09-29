@@ -72,6 +72,10 @@ public class Run {
 
         String directorName = getFilmDirector(filmDetailHtml);
         System.out.println("directorName : " + directorName);
+
+        String startSearchPattern = "Writers:";
+        int startIndex = filmDetailHtml.indexOf(startSearchPattern);
+
     }
 
     private static String getFilmDirector(String filmDetailHtml) {
