@@ -1,6 +1,6 @@
 package com.samples.imdbparser;
 
-import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.collections.CollectionUtils;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -61,11 +61,24 @@ public class Run {
         //Bulunan film linkleri içinden ilk linkin içeriğini çek
         String filmDetailHtml = getHtmlContentFromGivenUrl(wholeLinks.get(0));
         System.out.println("filmDetailHtml : " + filmDetailHtml);
-        
+
         //filmin başlığını detail ekranından al
         String title = getFilmTitle(filmDetailHtml);
         System.out.println("title : " + title);
 
+        String rating = getFilmRating(filmDetailHtml);
+        System.out.println("rating : " + rating);
+
+    }
+
+    private static String getFilmRating(String filmDetailHtml) {
+        String searchPattern = "<span itemprop=\"ratingValue\">";
+        String searchEndPattern = "</span>";
+        int startIndex = filmDetailHtml.indexOf(searchPattern);
+        int endIndex = filmDetailHtml.indexOf(searchEndPattern, startIndex);
+
+        String rating = filmDetailHtml.substring(startIndex + searchPattern.length(), endIndex);
+        return rating;
     }
 
     private static String getFilmTitle(String filmDetailHtml) {
@@ -83,7 +96,7 @@ public class Run {
     }
 
     private static String getHtmlContentFromGivenUrl(String siteUrl) {
-        System.out.println(String.format("fetching content with given url : %s", siteUrl));
+        System.out.println(String.format("*** fetching content with given url : %s", siteUrl));
         URL url;
         try {
             // get URL content
