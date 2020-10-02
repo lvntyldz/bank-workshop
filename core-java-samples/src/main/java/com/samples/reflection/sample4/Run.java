@@ -15,11 +15,11 @@ public class Run {
         cls = gson.getClass();
 
         //prints
-        printClassMethods(cls);
-        printClassPrivateFields(cls);
-        printClassFinalFields(cls);
-        printClassStaticFields(cls);
-        printClassConstructors(cls);
+        printClassMethods(cls);//tüm methodları yazıdır
+        printClassPrivateFields(cls);//tüm private değişkenleri yazdırır
+        printClassFinalFields(cls);//final değişkenleri yazdırır
+        printClassStaticFields(cls);//static değişkenleri yazdırır
+        printClassConstructors(cls);//constructorları yazdırır
 
     }
 
