@@ -27,3 +27,5 @@ build/
 *.xlk
 ~$*.ppt*
 ~$*
+
+*.jar
