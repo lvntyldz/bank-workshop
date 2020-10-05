@@ -30,6 +30,18 @@
 
     ###### NOT: profil değişikliklerinden sonra mvn clean unutulmamalıdır.
 
+* ##### intelliJ idea 
 
+    Spring profili JAR olarak çalıştırılıp parametre şeklinde geçilebileceği gibi, development esnasında da yine aşağıdaki şekilde parametre geçilebilir.
+
+    configürasyon adresi
+    ```
+    Edit Configurations -> Environments -> VM Options
+    ```
+  
+    prod profilinin parametre olarak verilmesi
+    ``` 
+    -Dspring.profiles.active=prod 
+    ```
 
 [index için tıklayın](../README.md)
