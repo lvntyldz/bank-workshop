@@ -6,3 +6,13 @@
 * ##### Jpa-Hibernate ile  CRUD işlemleri [doküman için tıklayın](./documentation/CRUDWithJpaHibernate.md)
 
 
+## TODOS
+
+- [ ] InMemory cache 
+- [X] CRUD jpa and hibernate
+- [ ] async task 
+- [ ] activating statistic logs 
+- [ ] unitTest 
+- [ ] swagger 
+- [ ] criteria API
+- [ ] hibernate interceptors
