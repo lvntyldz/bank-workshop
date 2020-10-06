@@ -4,15 +4,17 @@
 * ##### Ortam profillerinin[dev,prod] eklenmesi [doküman için tıklayın](./documentation/createEnvironmentProfiles.md)
 * ##### Properties dosyasından değer okuma[dev,prod] eklenmesi [doküman için tıklayın](./documentation/readParamFromConfigFile.md)
 * ##### Jpa-Hibernate ile  CRUD işlemleri [doküman için tıklayın](./documentation/CRUDWithJpaHibernate.md)
+* ##### Liquebase desteğinin eklenmesi [doküman için tıklayın](./documentation/addLiquebaseSupport.md)
 
 
 ## TODOS
 
 - [ ] InMemory cache 
-- [X] CRUD jpa and hibernate
 - [ ] async task 
-- [ ] activating statistic logs 
 - [ ] unitTest 
 - [ ] swagger 
 - [ ] criteria API
 - [ ] hibernate interceptors
+- [ ] activating statistic logs 
+- [X] java migration tool(liquebasse,flyway,)
+- [X] CRUD jpa and hibernate
