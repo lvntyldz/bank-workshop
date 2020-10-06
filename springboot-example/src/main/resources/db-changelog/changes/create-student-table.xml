@@ -11,13 +11,20 @@
                 <constraints primaryKey="true"/>
             </column>
             <column name="name" type="VARCHAR(255)"/>
-            <column name="passportNumber" type="VARCHAR(255)"/>
+            <column name="passport_number" type="VARCHAR(255)"/>
         </createTable>
 
         <rollback>
             <dropTable tableName="student"/>
         </rollback>
 
+    </changeSet>
+
+    <changeSet author="liquibase-docs"
+               id="createSequence-example">
+        <createSequence catalogName="cat" cycle="false"
+                        incrementBy="1" ordered="true" schemaName="public"
+                        sequenceName="hibernate_sequence" startValue="0" />
     </changeSet>
 
 </databaseChangeLog>

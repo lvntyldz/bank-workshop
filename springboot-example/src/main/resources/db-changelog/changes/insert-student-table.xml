@@ -9,19 +9,19 @@
         <insert tableName="student">
             <column name="id" valueNumeric="1"/>
             <column name="name" value="ahmet"/>
-            <column name="passportNumber" value="TC123"/>
+            <column name="passport_number" value="TC123"/>
         </insert>
 
         <insert tableName="student">
             <column name="id" valueNumeric="2"/>
             <column name="name" value="mehmet"/>
-            <column name="passportNumber" value="TC345"/>
+            <column name="passport_number" value="TC345"/>
         </insert>
 
         <insert tableName="student">
             <column name="id" valueNumeric="3"/>
             <column name="name" value="ali"/>
-            <column name="passportNumber" value="TC456"/>
+            <column name="passport_number" value="TC456"/>
         </insert>
 
     </changeSet>
