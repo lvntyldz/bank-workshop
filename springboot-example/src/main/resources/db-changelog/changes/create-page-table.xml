@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet author="levent.yildiz" id="07-10-2020_09:30">
+
+        <createTable tableName="pages">
+            <column autoIncrement="true" name="id" type="int(10)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="number" type="int(10)"/>
+            <column name="chapter" type="VARCHAR(255)"/>
+            <column name="content" type="VARCHAR(255)"/>
+            <column name="book_id" type="int(10)"/>
+        </createTable>
+
+        <rollback>
+            <dropTable tableName="pages"/>
+        </rollback>
+
+    </changeSet>
+
+</databaseChangeLog>
