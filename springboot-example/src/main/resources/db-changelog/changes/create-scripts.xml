@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet author="levent.yildiz" id="07-10-2020_18:37" runOnChange="true">
+        <sqlFile path="/db-changelog/changes/scripts/create.sql" stripComments="true"/>
+    </changeSet>
+
+    <changeSet author="levent.yildiz" id="07-10-2020_18:38" runOnChange="true">
+        <sqlFile path="/db-changelog/changes/scripts/insert.sql" stripComments="true"/>
+    </changeSet>
+
+</databaseChangeLog>

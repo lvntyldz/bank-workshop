@@ -8,5 +8,6 @@
     <include file="/db-changelog/changes/insert-student-table.xml"/>
     <include file="/db-changelog/changes/create-book-table.xml"/>
     <include file="/db-changelog/changes/create-page-table.xml"/>
+    <include file="/db-changelog/changes/create-scripts.xml"/>
 
 </databaseChangeLog>
