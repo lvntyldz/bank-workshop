@@ -20,7 +20,7 @@ public class Book implements Serializable {
     private String isbn;
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name="book_id")
+    @JoinColumn(name = "book_id")
     private Set<Page> pages;
 
     public Book() {

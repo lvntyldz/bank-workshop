@@ -15,6 +15,7 @@
 
 - [ ] hibernate oneToMany relation
 - [ ] transaction management
+- [ ] Exception handling with spring 
 - [ ] InMemory cache 
 - [ ] async task 
 - [ ] unitTest 

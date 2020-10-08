@@ -24,7 +24,7 @@
                id="createSequence-example">
         <createSequence catalogName="cat" cycle="false"
                         incrementBy="1" ordered="true" schemaName="public"
-                        sequenceName="hibernate_sequence" startValue="0" />
+                        sequenceName="hibernate_sequence" startValue="0"/>
     </changeSet>
 
 </databaseChangeLog>

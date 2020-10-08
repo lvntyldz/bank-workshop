@@ -21,11 +21,11 @@ public class BookController {
     @GetMapping("/add")
     public String addBook() {
 
-        Page page1 =new Page(1, "chapter1 contents", "chapter1:why java");
+        Page page1 = new Page(1, "chapter1 contents", "chapter1:why java");
         Set<Page> pages = new HashSet<>();
         pages.add(page1);
 
-        Book book = new Book("Java 101", "Ali ALİOĞLU", "isbn12345",pages);
+        Book book = new Book("Java 101", "Ali ALİOĞLU", "isbn12345", pages);
 
         bookRepository.save(book);
 
