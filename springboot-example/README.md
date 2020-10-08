@@ -8,12 +8,14 @@
 * ##### Liquebase SQLFile dan script çalıştırma [doküman için tıklayın](./documentation/addLiqubaseChangesetFromSqlFileData.md)
 * ##### Hibernate istatistik loglarının açılması [doküman için tıklayın](./documentation/addStatisticalLoggingSessionEvent.md)
 * ##### Hibernate unidirectional(tek yönlü) OneToMany ilişki [doküman için tıklayın](./documentation/addOneToManyUnidirectionalRelation.md)
+* ##### Hibernate biidirectional(çift yönlü) OneToMany ilişki [doküman için tıklayın](./documentation/addOneToManyBidirectionalRelation.md)
 * ##### Bazı Hibernate notları [doküman için tıklayın](./documentation/hibernateRelationNotes.md)
 
 
 ## TODOS
 
 - [ ] hibernate oneToMany relation
+- [ ] Fetch types[Lazy Loading]
 - [ ] transaction management
 - [ ] Exception handling with spring 
 - [ ] InMemory cache 
