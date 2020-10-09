@@ -10,16 +10,24 @@
 * ##### Hibernate unidirectional(tek yönlü) OneToMany ilişki [doküman için tıklayın](./documentation/addOneToManyUnidirectionalRelation.md)
 * ##### Hibernate biidirectional(çift yönlü) OneToMany ilişki [doküman için tıklayın](./documentation/addOneToManyBidirectionalRelation.md)
 * ##### Hibernate FetchType kavramı [doküman için tıklayın](./documentation/hibernateFetchTypes.md)
+* ##### Spring cache implementasyonu [doküman için tıklayın](./documentation/springCacheImpl.md)
+* ##### Spring cache kullanımı [doküman için tıklayın](./documentation/springCacheExamples.md)
+
+
 * ##### Bazı Hibernate notları [doküman için tıklayın](./documentation/hibernateRelationNotes.md)
 
 
 ## TODOS
 
-- [ ] hibernate oneToMany relation
-- [ ] Fetch types[Lazy Loading]
+- [ ] hibernate ManyToMany relation
+- [ ] hibernate oneToOne relation
+- [X] hibernate oneToMany relation
+- [X] Fetch types[Lazy Loading]
 - [ ] transaction management
 - [ ] Exception handling with spring 
-- [ ] InMemory cache 
+- [X] Spring cache Impl 
+- [ ] Spring cache usage 
+- [ ] Spring distributed cache 
 - [ ] async task 
 - [ ] unitTest 
 - [ ] swagger 
