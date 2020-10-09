@@ -19,7 +19,11 @@ public class Customer {
     private Timestamp createDate = new Timestamp(System.currentTimeMillis());
 
     @JsonIgnore
-    @OneToMany(mappedBy = "customer")
+    @OneToMany(
+            //fetch = FetchType.EAGER,
+            //fetch = FetchType.LAZY,
+            mappedBy = "customer"
+    )
     private Set<Order> orders = new HashSet<>();
 
     public Customer() {

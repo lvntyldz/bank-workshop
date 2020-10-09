@@ -19,7 +19,11 @@ public class Book implements Serializable {
     @Column(unique = true)
     private String isbn;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(
+            //fetch = FetchType.EAGER,
+            //fetch = FetchType.LAZY,
+            cascade = CascadeType.ALL
+    )
     @JoinColumn(name = "book_id")
     private Set<Page> pages;
 

@@ -1,7 +1,6 @@
 package com.ba.domain;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
 
 @Entity
 @Table(name = "orders")
@@ -16,7 +15,11 @@ public class Order {
     private int price;
 
     @ManyToOne
-    @JoinColumn(name = "customer_id")
+    @JoinColumn(
+            //fetch = FetchType.EAGER,
+            //fetch = FetchType.LAZY,
+            name = "customer_id"
+    )
     private Customer customer;
 
     public Order() {

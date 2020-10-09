@@ -8,5 +8,17 @@ manyToMany ilişkisini ise <b>JoinColumn</b> ile tutmamız mümkün değildir. B
 
 --- 
 
+@Transactional olarak işaretlenen bir method içerisinde obje üzerirnde değişiklik yapıldığında objectRepository.save(obje) şeklinde repository üzerinden bir save işlemi yapılmasa bile hibernate değişiklikleri DB ye yansıtır.
+Hibernate transaction aşamasında objeler üzerindeki değişikliklieri tespit ederek DB ye vurur.
+
+---
+
+Hibernate'in objeler arasındaki ilişkilerinde default fetchType tanımı aşağıdaki gibidir.
+- OneToMany: LAZY
+- ManyToOne: EAGER
+- ManyToMany: LAZY
+- OneToOne: EAGER
+
+---
 
 [index için tıklayın](../README.md)

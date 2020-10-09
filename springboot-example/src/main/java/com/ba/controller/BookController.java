@@ -47,6 +47,10 @@ public class BookController {
 
         Book book = optionalBook.get();
 
+        book.getPages().forEach(p -> {
+            System.out.println("page chapter : " + p.getChapter());
+        });
+
         return book.toString();
     }
 

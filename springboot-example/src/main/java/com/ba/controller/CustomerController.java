@@ -27,6 +27,10 @@ public class CustomerController {
 
         Customer customer = optionalCustomer.get();
 
+        customer.getOrders().forEach(o -> {
+            System.out.println("order product name : " + o.getProductName());
+        });
+
         return customer;
     }
 }
