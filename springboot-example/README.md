@@ -10,6 +10,7 @@
 * ##### Hibernate unidirectional(tek yönlü) OneToMany ilişki [doküman için tıklayın](./documentation/addOneToManyUnidirectionalRelation.md)
 * ##### Hibernate biidirectional(çift yönlü) OneToMany ilişki [doküman için tıklayın](./documentation/addOneToManyBidirectionalRelation.md)
 * ##### Hibernate FetchType kavramı [doküman için tıklayın](./documentation/hibernateFetchTypes.md)
+* ##### Hibernate Soft Delete işlemi [doküman için tıklayın](./documentation/hibernateSoftDetele.md)
 * ##### Spring cache implementasyonu [doküman için tıklayın](./documentation/springCacheImpl.md)
 * ##### Spring cache kullanımı [doküman için tıklayın](./documentation/springCacheExamples.md)
 * ##### Spring kapsamlar(Bean Scopes) [doküman için tıklayın](./documentation/springBeanScopes.md)
@@ -41,4 +42,5 @@
 - [ ] Logging configuration
 - [ ] More design pattern example
 - [ ] use mysql instead of h2
-- [ ] soft delete   
+- [X] soft delete 
+- [X] Spring beans
