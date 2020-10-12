@@ -12,6 +12,7 @@
 * ##### Hibernate FetchType kavramı [doküman için tıklayın](./documentation/hibernateFetchTypes.md)
 * ##### Spring cache implementasyonu [doküman için tıklayın](./documentation/springCacheImpl.md)
 * ##### Spring cache kullanımı [doküman için tıklayın](./documentation/springCacheExamples.md)
+* ##### Spring kapsamlar(Bean Scopes) [doküman için tıklayın](./documentation/springBeanScopes.md)
 
 
 * ##### Bazı Hibernate notları [doküman için tıklayın](./documentation/hibernateRelationNotes.md)
