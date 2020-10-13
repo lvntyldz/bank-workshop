@@ -8,17 +8,22 @@ manyToMany ilişkisini ise <b>JoinColumn</b> ile tutmamız mümkün değildir. B
 
 --- 
 
-@Transactional olarak işaretlenen bir method içerisinde obje üzerirnde değişiklik yapıldığında objectRepository.save(obje) şeklinde repository üzerinden bir save işlemi yapılmasa bile hibernate değişiklikleri DB ye yansıtır.
+**@Transactional** olarak işaretlenen bir method içerisinde obje üzerirnde değişiklik yapıldığında objectRepository.save(obje) şeklinde repository üzerinden bir save işlemi yapılmasa bile hibernate değişiklikleri DB ye yansıtır.
 Hibernate transaction aşamasında objeler üzerindeki değişikliklieri tespit ederek DB ye vurur.
 
 ---
 
-Hibernate'in objeler arasındaki ilişkilerinde default fetchType tanımı aşağıdaki gibidir.
-- OneToMany: LAZY
-- ManyToOne: EAGER
-- ManyToMany: LAZY
-- OneToOne: EAGER
-
+Hibernate'in objeler arasındaki ilişkilerinde default **fetchType** tanımı aşağıdaki gibidir.
+- **OneToMany:** LAZY
+- **ManyToOne:** EAGER
+- **ManyToMany:** LAZY
+- **OneToOne:** EAGER
+---
+Hibernate te entityler arasında kalıtım ilişkisi kurmak için @Inheritance anotasyonu kullanılır.
+**@Inheritance**'in aldığı **strategy** değerleri aşağıdaki gibidir.
+- **InheritanceType.JOINED :** super class hemde alt classlar(entity) için birer tablo oluşturur.
+- **InheritanceType.SINGLE_TABLE :** Super class adıyla bir tablo oluşturulur. Tüm alt entityler burada tutulur. 
+- **InheritanceType.TABLE_PER_CLASS :**  
 ---
 
 [index için tıklayın](../README.md)

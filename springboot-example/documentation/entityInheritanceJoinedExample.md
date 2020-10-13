@@ -6,7 +6,7 @@
     @Inheritance'ın aldığı strategy değerleri aşağıdaki gibidir.
     - SINGLE_TABLE     
     - TABLE_PER_CLASS     
-    - JOINED               
+    - **JOINED**               
     ```
     @Entity
     @Table(name = "notification")
@@ -125,6 +125,11 @@
     
     DB deki tüm notificationları listeleme
     http://localhost:8080/notification/list
+    
+    ID:3 olan kaydı silme
+    ```
+    curl --location --request DELETE 'http://localhost:8080/notification/delete/3'
+    ```    
 
 * ### Hibernate SQL logları
     Insert notification logu
