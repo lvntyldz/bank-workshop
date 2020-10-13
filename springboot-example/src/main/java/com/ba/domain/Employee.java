@@ -2,16 +2,14 @@ package com.ba.domain;
 
 import com.ba.domain.abstraction.BaseEntity;
 
-import javax.persistence.Entity;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "employee")
 @Inheritance(
         strategy = InheritanceType.SINGLE_TABLE
 )
+//@DiscriminatorColumn(name = "EMP_TYPE", discriminatorType = DiscriminatorType.STRING)
 public class Employee extends BaseEntity {
 
     private String firstName;
