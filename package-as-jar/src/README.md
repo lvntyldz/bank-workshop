@@ -1,1 +1,1 @@
-
+[index için tıklayın](../README.md)

@@ -1,6 +1,9 @@
 * ### Tanımlar
     **singleton**
-    Varsayılan olarak her bean Singleton’dur. Bu Bean’den sadece bir tane üretilir. Spring her isteğe aynı bean'i döner.
+    Spring içinde  her bean default olarak Singleton’dur. 
+    singleton: sadece bir instance anlamına gelir.Spring her isteğe aynı bean'i döner.
+    Sprinteki Singleton geleneksel singleton tasarından biraz farklıdır.
+    Nesne ClassLoader yerine Spring container içinde oluşturulur.
     ```
     @Component
     public class SingletonScopeComponent {...}

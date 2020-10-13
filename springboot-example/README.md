@@ -44,3 +44,5 @@
 - [ ] use mysql instead of h2
 - [X] soft delete 
 - [X] Spring beans
+
+[index için tıklayın](../README.md)
