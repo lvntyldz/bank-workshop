@@ -19,31 +19,30 @@
     ![](../screenshots/inheritancePaymentDiagram.png)
    
 * ### Payment
-InheritanceType.TABLE_PER_CLASS stratejisi ile kurulan ilişkili tablolarda hem üst class için hem de alt classlar için tablo oluşturulmaldır. 
-Bu çalışmadaki örnekte aynı özelliklere sahip 3 tablo anlamına gelir.
-###### NOTE : Varsayılan durumda üst tabloya(super class) kayıt atılmaz ancak joinlerde üst tabloya select attığı için bu tablonunda DB tarafında tanımlı olması gerekmektedir. 
-Alt classlar için birer tablo oluşturulur.
-```
-@Entity
-@Table(name = "payment")
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-public class Payment implements Serializable {
-
-    @Id
-    @GeneratedValue
-    private int id;
-
-    private int amount;
-}
-```
-
-Her class için bir tablo ilişkisi aşağıdaki şekilde kurulur.
-```
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-```
-
-
-
+    InheritanceType.**TABLE_PER_CLASS** stratejisi ile kurulan ilişkili tablolarda hem üst class için hem de alt classlar için tablo oluşturulmaldır. 
+    Bu çalışmadaki örnekte aynı özelliklere sahip 3 tablo anlamına gelir.
+    ###### NOTE : Varsayılan durumda üst tabloya(super class) kayıt atılmaz ancak joinlerde üst tabloya select attığı için bu tablonunda DB tarafında tanımlı olması gerekmektedir. 
+    ###### NOTE2 : **Abstract classlar** için değil **concrete classlar** için tablo oluşturulur. 
+    Alt classlar için birer tablo oluşturulur.
+    ```
+    @Entity
+    @Table(name = "payment")
+    @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+    public class Payment implements Serializable {
+    
+        @Id
+        @GeneratedValue
+        private int id;
+    
+        private int amount;
+    }
+    ```
+    
+    Her class için bir tablo ilişkisi aşağıdaki şekilde kurulur.
+    ```
+    @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+    ```
+  
 * ### ChequePayment
     ChequePayment adlı entity Payment'dan extend edilerek Payment class'ının özelliklerini almıştır.
     ```
@@ -84,57 +83,57 @@ Her class için bir tablo ilişkisi aşağıdaki şekilde kurulur.
     curl --location --request DELETE 'http://localhost:8080/payment/delete/3'
 
 * ### Hibernate SQL logları
-Hibenate ile çek ekleme logu
-```
-Hibernate: 
-    insert 
-    into
-        card_payment
-        (amount, card_no, id) 
-    values
-        (?, ?, ?)
-```
- 
-Hibenate ID:2 olan kaydın logu
-```
-Hibernate: 
-    select
-        payment0_.id as id1_9_0_,
-        payment0_.amount as amount2_9_0_,
-        payment0_.card_no as card_no1_1_0_,
-        payment0_.cheque_no as cheque_n1_2_0_,
-        payment0_.clazz_ as clazz_0_ 
-    from
-        ( select
-            id,
-            amount,
-            null as card_no,
-            null as cheque_no,
-            0 as clazz_ 
+    Hibenate ile çek ekleme logu
+    ```
+    Hibernate: 
+        insert 
+        into
+            card_payment
+            (amount, card_no, id) 
+        values
+            (?, ?, ?)
+    ```
+     
+    Hibenate ID:2 olan kaydın logu
+    ```
+    Hibernate: 
+        select
+            payment0_.id as id1_9_0_,
+            payment0_.amount as amount2_9_0_,
+            payment0_.card_no as card_no1_1_0_,
+            payment0_.cheque_no as cheque_n1_2_0_,
+            payment0_.clazz_ as clazz_0_ 
         from
-            payment 
-        union
-        all select
-            id,
-            amount,
-            card_no,
-            null as cheque_no,
-            1 as clazz_ 
-        from
-            card_payment 
-        union
-        all select
-            id,
-            amount,
-            null as card_no,
-            cheque_no,
-            2 as clazz_ 
-        from
-            cheque_payment 
-    ) payment0_ 
-where
-    payment0_.id=?
-```    
+            ( select
+                id,
+                amount,
+                null as card_no,
+                null as cheque_no,
+                0 as clazz_ 
+            from
+                payment 
+            union
+            all select
+                id,
+                amount,
+                card_no,
+                null as cheque_no,
+                1 as clazz_ 
+            from
+                card_payment 
+            union
+            all select
+                id,
+                amount,
+                null as card_no,
+                cheque_no,
+                2 as clazz_ 
+            from
+                cheque_payment 
+        ) payment0_ 
+    where
+        payment0_.id=?
+    ```    
 
 
 [index için tıklayın](../README.md)

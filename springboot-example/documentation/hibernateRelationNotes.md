@@ -26,4 +26,12 @@ Hibernate te entityler arasında kalıtım ilişkisi kurmak için @Inheritance a
 - **InheritanceType.TABLE_PER_CLASS :**  
 ---
 
+Aynı primary key'e sahip entityleri yüklerken ilk erişim isteğinde DB'ye sorgu atılır. ikinci erişim isteğinde ise DB ye sorgu atılmadan hibernate cacheten cevap veriri.
+Bu hibernate'in first level cache kabiliyetinden gelmektedir. first level cache devre dışı bırakılamaz.
+```
+session.get(Employee.class,1L);//ilk istek(DB)
+session.get(Employee.class,1L);//ikinc istek(Cache)
+```
+---
+
 [index için tıklayın](../README.md)
