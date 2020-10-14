@@ -13,6 +13,7 @@
 * ##### Hibernate Soft Delete işlemi [doküman için tıklayın](./documentation/hibernateSoftDetele.md)
 * ##### Hibernate Entity Inheritance Örneği1 (strategy = InheritanceType.JOINED)  [doküman için tıklayın](./documentation/entityInheritanceJoinedExample.md)
 * ##### Hibernate Entity Inheritance Örneği2 (strategy = InheritanceType.SINGLE_TABLE)  [doküman için tıklayın](./documentation/entityInheritanceSingleTableExample.md)
+* ##### Hibernate Entity Inheritance Örneği3 (strategy = InheritanceType.TABLE_PER_CLASS)  [doküman için tıklayın](./documentation/entityInheritanceTablePerClassExample.md)
 * ##### Spring cache implementasyonu [doküman için tıklayın](./documentation/springCacheImpl.md)
 * ##### Spring cache kullanımı [doküman için tıklayın](./documentation/springCacheExamples.md)
 * ##### Spring kapsamlar(Bean Scopes) [doküman için tıklayın](./documentation/springBeanScopes.md)

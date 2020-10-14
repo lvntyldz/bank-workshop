@@ -14,12 +14,12 @@ public class PaymentController {
     @Autowired
     private PaymentService service;
 
-    @GetMapping("/card/add")
+    @GetMapping("/cheque/add")
     public String addChequePayment() {
         return service.addChequePayment();
     }
 
-    @GetMapping("/cheque/add")
+    @GetMapping("/card/add")
     public String addCardPayment() {
         return service.addNewCardPayment();
     }
