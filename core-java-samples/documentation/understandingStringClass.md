@@ -23,10 +23,20 @@
 - String sınıfı Object sınıfını extends eder.
 - String sınıfının 10 dan fazla constructoru, 60 dan fazla metodu vardır.
 
+- Aşağıdaki iki ifade birbirine eşdeğerdir.
+```
+String str = "abc";
+```
+
+```
+char data[] = {'a', 'b', 'c'};
+String str = new String(data);
+```
 
 * ### Kaynaklar
     - https://www.geeksforgeeks.org/storage-of-string-in-java/
     - https://www.journaldev.com/797/what-is-java-string-pool
+    - https://docs.oracle.com/javase/8/docs/api/java/lang/String.html
 
 
 [index için tıklayın](../README.md)
