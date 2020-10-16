@@ -17,21 +17,25 @@
 * ##### Spring cache implementasyonu [doküman için tıklayın](./documentation/springCacheImpl.md)
 * ##### Spring cache kullanımı [doküman için tıklayın](./documentation/springCacheExamples.md)
 * ##### Spring kapsamlar(Bean Scopes) [doküman için tıklayın](./documentation/springBeanScopes.md)
-* ##### Projeye Lombok Eklenmesi [doküman için tıklayın](./documentation/addLombokToProject.md)
+* ##### Spring Opsiyonel path variable [doküman için tıklayın](./documentation/generateBarcodeAndPdf.md)
 
 
 * ##### Bazı Hibernate notları [doküman için tıklayın](./documentation/hibernateRelationNotes.md)
+
+<br/>
+<br/>
+
+**3rd Libraries**
+* ##### Projeye Lombok Eklenmesi [doküman için tıklayın](./documentation/addLombokToProject.md)
+* ##### Barcode Oluşturma ve PDF'e yazma [doküman için tıklayın](./documentation/generateBarcodeAndPdf.md)
 
 
 ## TODOS
 
 - [ ] hibernate ManyToMany relation
 - [ ] hibernate oneToOne relation
-- [X] hibernate oneToMany relation
-- [X] Fetch types[Lazy Loading]
 - [ ] transaction management
 - [ ] Exception handling with spring 
-- [X] Spring cache Impl 
 - [ ] Spring cache usage 
 - [ ] Spring distributed cache 
 - [ ] async task 
@@ -39,14 +43,9 @@
 - [ ] swagger 
 - [ ] criteria API
 - [ ] hibernate interceptors
-- [X] activating statistic logs 
-- [X] java migration tool(liquibasse,flyway,)
-- [X] CRUD jpa and hibernate
 - [ ] Add actuator
 - [ ] Logging configuration
 - [ ] More design pattern example
 - [ ] use mysql instead of h2
-- [X] soft delete 
-- [X] Spring beans
 
 [index için tıklayın](../README.md)
