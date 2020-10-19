@@ -36,7 +36,6 @@
 - [ ] hibernate oneToOne relation
 - [ ] transaction management
 - [ ] Exception handling with spring 
-- [ ] Spring cache usage 
 - [ ] Spring distributed cache 
 - [ ] async task 
 - [ ] unitTest 

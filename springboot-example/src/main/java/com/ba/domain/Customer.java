@@ -22,7 +22,8 @@ public class Customer {
     @OneToMany(
             //fetch = FetchType.EAGER,
             //fetch = FetchType.LAZY,
-            mappedBy = "customer"
+            mappedBy = "customer",
+            cascade = CascadeType.ALL
     )
     private Set<Order> orders = new HashSet<>();
 
