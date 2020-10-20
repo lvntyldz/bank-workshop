@@ -2,7 +2,7 @@
     Bu çalışmadaki örnekler **com.samples.jdbc** adlı pakette  kodlanmıştır.
 
 * ### Açıklamlar
-    Java’da veritabanı işlemleri için JDBC(Java Database Connectivity) API kullanılır. 
+    Java’da veritabanı işlemleri için **JDBC(Java Database Connectivity)** API kullanılır. 
      ![](../images/Jdbc.png)
 
 * ### JDBC Connection bilgileri
@@ -36,25 +36,25 @@
     ```
 
 * ### Sorgu çalıştırma
-    insert örneği
+    **insert örneği**
     ```
     String sql = "INSERT INTO REGISTRATION VALUES (100, 'Ali', 'TURAN', 18)";
     statement.executeUpdate(sql);
     ```
     
-    update örneği
+    **update örneği**
     ```
     String sql = "UPDATE REGISTRATION SET age = 30 WHERE id in (100, 101)";
     statement.executeUpdate(sql);
     ```
     
-    delete örneği
+    **delete örneği**
     ```
     String sql = "DELETE FROM REGISTRATION WHERE id = 101";
     statement.executeUpdate(sql);
     ```
     
-    select örneği
+    **select örneği**
     ```
     String sql = "SELECT id, firstname, lastname, age FROM REGISTRATION";
     ResultSet rs = statement.executeQuery(sql);
@@ -74,7 +74,7 @@
     ```
 
 * ### bağlantıların kapatılması
-    SQL işlemleri bittikten sonra connection ve statement finaly blok içinde close edilir
+    SQL işlemleri bittikten sonra connection ve statement **finaly** blok içinde close edilir
     ```
     } finally {
         //finally block used to close resources
