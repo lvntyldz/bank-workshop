@@ -1,6 +1,10 @@
 * ### Referanslar
     Bu çalışmadaki örnekler **com.samples.jdbc** adlı pakette  kodlanmıştır.
 
+* ### Açıklamlar
+    Java’da veritabanı işlemleri için JDBC(Java Database Connectivity) API kullanılır. 
+     ![](../images/Jdbc.png)
+
 * ### JDBC Connection bilgileri
     **com.samples.jdbc.Constants** class'ında DB bilgileri constant değerler olarak tutulmaktadır.
     ```
