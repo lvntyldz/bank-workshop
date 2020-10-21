@@ -115,7 +115,7 @@
   
     #######NOTE: İkinci bir instance oluşturmak için farklı bir Controller da daha **Autowired** edilmelidir..
     
-    Controller katmanında bir end-point yaratma ve Prototype bean üzerinden method çağırma
+    Controller katmanında bir endpoint yaratma ve Prototype bean üzerinden method çağırma
     ```
     @GetMapping("/prototype")
     public long getPrototypeScopeData() {

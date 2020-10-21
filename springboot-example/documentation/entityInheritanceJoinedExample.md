@@ -113,7 +113,7 @@
     Hibernate **@Inheritance** anotasyonu ile varsayılan olarak üst tablodaki **primary keyler(ID)** ile alt tabloları bağlar.
     Bu çalışmada **Notification** tablosundaki id ile **SmsNotification** ve **EmailNotification**  tablolarındaki id alanı beslenmektedir. 
 
-* ### End-point ler ile CRUD işlemleri
+* ### endpoint ler ile CRUD işlemleri
     Sms notification'ı ekleme
     http://localhost:8080/notification/sms/add
     

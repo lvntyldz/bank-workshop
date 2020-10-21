@@ -63,7 +63,7 @@
     @DiscriminatorColumn(name = "EMP_TYPE", discriminatorType = DiscriminatorType.STRING)
     ```    
 
-* ### End-point ler ile CRUD işlemleri  
+* ### endpoint ler ile CRUD işlemleri  
     Full time employee ekleme
     http://localhost:8080/employee/full-time/add
     

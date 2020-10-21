@@ -39,7 +39,7 @@
                     "WHERE id = ?")
     ```
     
-* ### End-point, service ve repository oluşturma
+* ### endpoint, service ve repository oluşturma
     Daha önce anlatıldığı gibi service,controller ve repository katmanları oluşturulur.
     Controller örneği aşağıdaki gibi olacaktır
     ```
@@ -72,7 +72,7 @@
     }
     ```
     
-* ### End-point aracılığıyla kayıt silme
+* ### endpoint aracılığıyla kayıt silme
     ID:3 olan Todo'yu DB den silmek için aşağıdaki komut terminalden çalıştırılır
     ```
     curl --location --request DELETE 'http://localhost:8080/todo/delete/3'

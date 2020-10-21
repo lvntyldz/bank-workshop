@@ -1,7 +1,7 @@
 * ### Referanslar
     Bu çalışmadaki örnekler **com.ba.controller.PdfController** adlı classta  kodlanmıştır.
-    - Çalışmada barcodeTxt parametresiyle yada parametresiz bir şekilde çağrılacak bir end-point oluşturlumuştur.
-    - Bu endPoint aracılığıyla PDF dosyasına barcode verisi eklenmektedir.
+    - Çalışmada barcodeTxt parametresiyle yada parametresiz bir şekilde çağrılacak bir endpoint oluşturlumuştur.
+    - Bu endpoint aracılığıyla PDF dosyasına barcode verisi eklenmektedir.
     - Çalışmada, hem barcode oluşturma hemde pdf'e export etme kabiliyeti olan ipdf kütüphanesi(library) kullanılmıştır.
 
 * ### Dependency ekleme 
@@ -15,7 +15,7 @@
     </dependency>
     ```    
   
-* ### Farklı pathlerler aynı end-point
+* ### Farklı pathlerler aynı endpoint
     Bu çalışmada aynı zaman parametreli ve parametresiz endpoint nasıl yazılacağı örneklenmiştir.
     **com.ba.controller.PdfController.addBarcode** methodunda  Map tipinde bir @PathVariable tanımı yapılarak  reqestteki tüm parametreler Map datası olarak alınmıştır.
     **@RequestMapping** anotasonuna value parametresi aşağıdaki gibi geçilerek iki URL'in aynı method ile eşlenmesi sağlanmıştır.

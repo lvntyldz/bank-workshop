@@ -52,7 +52,7 @@
     public interface StudentRepository extends JpaRepository<Student, Long>{    
     }  
     ```
-* ### Controller(end-point) oluşturulması
+* ### Controller(endpoint) oluşturulması
     İlgili requestlerin MAP edilebilmesi için bir controller katmanı oluşturulur. Burada StudentRepository @Autowired ile Inject edilir.
     ```
     @RestController

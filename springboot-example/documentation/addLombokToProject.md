@@ -85,7 +85,7 @@
     
     }
     ```
-* ### End-point ler üzerinden işlem
+* ### endpoint ler üzerinden işlem
     ekleme işlemi için 
     http://localhost:8080/game/add
     

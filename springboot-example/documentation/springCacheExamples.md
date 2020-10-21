@@ -34,7 +34,7 @@
     @CacheEvict(value = "CustomerCache", allEntries = true)
     ```
 
-* ### Web üzerinden end-pointlere erişim
+* ### Web üzerinden endpointlere erişim
     - **id:2 olan(cache'e yazılmayan) kaydın görüntülenmesi** http://localhost:8080/customer/2
     - **id:5 olan kaydın görüntülenmesi** http://localhost:8080/customer/5
     - **id:5 olan müşterinin adını mert olarak güncelleme** http://localhost:8080/customer/5/mert

@@ -66,7 +66,7 @@
     Burada primary key ve DTYPE'a  ihtiyaç yoktur. 
     Her alt entity için bir tablo yaratılacaktır.
 
-* ### End-point ler ile CRUD işlemleri  
+* ### endpoint ler ile CRUD işlemleri  
     Çek payment ekleme
     http://localhost:8080/payment/cheque/add
     
