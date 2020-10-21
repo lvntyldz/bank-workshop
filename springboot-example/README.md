@@ -18,6 +18,7 @@
 * ##### Spring cache kullanımı [doküman için tıklayın](./documentation/springCacheExamples.md)
 * ##### Spring kapsamlar(Bean Scopes) [doküman için tıklayın](./documentation/springBeanScopes.md)
 * ##### Spring Opsiyonel path variable [doküman için tıklayın](./documentation/generateBarcodeAndPdf.md)
+* ##### Swagger Entegrasyonu [doküman için tıklayın](./documentation/swaggerIntegration.md)
 
 
 * ##### Bazı Hibernate notları [doküman için tıklayın](./documentation/hibernateRelationNotes.md)
@@ -39,12 +40,13 @@
 - [ ] Spring distributed cache 
 - [ ] async task 
 - [ ] unitTest 
-- [ ] swagger 
 - [ ] criteria API
 - [ ] hibernate interceptors
 - [ ] Add actuator
 - [ ] Logging configuration
 - [ ] More design pattern example
 - [ ] use mysql instead of h2
+- [ ] Jwt
+- [ ] oauth2
 
 [index için tıklayın](../README.md)
