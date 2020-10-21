@@ -19,9 +19,11 @@
 * ##### Spring kapsamlar(Bean Scopes) [doküman için tıklayın](./documentation/springBeanScopes.md)
 * ##### Spring Opsiyonel path variable [doküman için tıklayın](./documentation/generateBarcodeAndPdf.md)
 * ##### Swagger Entegrasyonu [doküman için tıklayın](./documentation/swaggerIntegration.md)
+* ##### Actuator Ekleme [doküman için tıklayın](./documentation/addActuator.md)
 
 
 * ##### Bazı Hibernate notları [doküman için tıklayın](./documentation/hibernateRelationNotes.md)
+* ##### Bazı maven notları [doküman için tıklayın](./documentation/mavenNotes.md)
 
 <br/>
 <br/>
@@ -42,7 +44,6 @@
 - [ ] unitTest 
 - [ ] criteria API
 - [ ] hibernate interceptors
-- [ ] Add actuator
 - [ ] Logging configuration
 - [ ] More design pattern example
 - [ ] use mysql instead of h2
