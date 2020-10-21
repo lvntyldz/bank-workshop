@@ -7,7 +7,7 @@ import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 
 @MappedSuperclass
-public abstract class BaseEntity implements IdBasedDomain,Serializable {
+public abstract class BaseEntity implements IdBasedDomain, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

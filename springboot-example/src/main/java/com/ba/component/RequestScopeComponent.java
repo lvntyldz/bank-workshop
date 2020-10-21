@@ -2,7 +2,6 @@ package com.ba.component;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.RequestScope;
-import org.springframework.web.context.annotation.SessionScope;
 
 @Component
 @RequestScope

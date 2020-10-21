@@ -3,7 +3,6 @@ package com.ba.service;
 import com.ba.domain.EmailNotification;
 import com.ba.domain.Notification;
 import com.ba.domain.SmsNotification;
-import com.ba.domain.abstraction.BaseEntity;
 import com.ba.repository.NotificationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

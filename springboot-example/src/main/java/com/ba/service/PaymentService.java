@@ -1,8 +1,8 @@
 package com.ba.service;
 
-import com.ba.domain.Payment;
-import com.ba.domain.ChequePayment;
 import com.ba.domain.CardPayment;
+import com.ba.domain.ChequePayment;
+import com.ba.domain.Payment;
 import com.ba.repository.PaymentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

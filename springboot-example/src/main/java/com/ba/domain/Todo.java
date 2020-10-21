@@ -29,7 +29,7 @@ public class Todo implements Serializable {
     public Todo() {
     }
 
-    public Todo( String title, String description) {
+    public Todo(String title, String description) {
         this.title = title;
         this.description = description;
     }
