@@ -18,6 +18,7 @@
 * ##### Spring cache kullanımı [doküman için tıklayın](./documentation/springCacheExamples.md)
 * ##### Spring kapsamlar(Bean Scopes) [doküman için tıklayın](./documentation/springBeanScopes.md)
 * ##### Spring Opsiyonel path variable [doküman için tıklayın](./documentation/generateBarcodeAndPdf.md)
+* ##### Spring ile Exception Handling [doküman için tıklayın](./documentation/exceptionHanglingWithSpring.md)
 * ##### Swagger Entegrasyonu [doküman için tıklayın](./documentation/swaggerIntegration.md)
 * ##### Actuator Ekleme [doküman için tıklayın](./documentation/addActuator.md)
 
@@ -38,7 +39,6 @@
 - [ ] hibernate ManyToMany relation
 - [ ] hibernate oneToOne relation
 - [ ] transaction management
-- [ ] Exception handling with spring 
 - [ ] Spring distributed cache 
 - [ ] async task 
 - [ ] unitTest 
