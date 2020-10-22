@@ -7,7 +7,7 @@
     - Bu caselere kurumsal uygulamarda çokça rastlanmaktadır.
 
 * ### @EnableAsync (Async işlemlerin springte aktif edilmesi)
-    Bu anotasyon ile spring'e main thread dışında da iş yaptırılacağı bildirilmiş olur.
+    Bu anotasyon ile spring'e main thread dışında da iş yaptırılacağı bildirilmiş olur. Anotasyon **com.ba.Run** class'ına eklenmiştir.
     ```
     @EnableCaching
     @EnableAsync
@@ -71,10 +71,10 @@
     ```    
     
 * ### PdfService export methodlarının eklenmesi.
-    TodoListi ve GameList'i pdf'e yazan iki method PdfService'ine eklenmiştir.
+    **TodoListi** ve **GameList**'i pdf'e yazan iki method **PdfService**'ine eklenmiştir.
     Referansları aşağıdaki gibidir: <br/>
-    com.ba.service.PdfService.generateTodoList <br/>
-    com.ba.service.PdfService.generateGameList
+    **com.ba.service.PdfService.generateTodoList** <br/>
+    **com.ba.service.PdfService.generateGameList**
     
 * ### Endpointler ile erişim
     - TODO export için : http://localhost:8080/export-report/todo
@@ -85,11 +85,12 @@
     
 * ### Notlar
     - Async işlemlerin gerçek senaryoya yaklaşması için Thread.sleep() ile 15 sn bekleme yapılmaktadır.
-    - Ardarda üstteki endpointlere erişildiğinde 15 sn sonra aşağıdaki loglar console dan görülür.
+    - Art arda üstteki endpointlere erişildiğinde 15 sn sonra aşağıdaki loglar console dan görülür.
     ```
     2020-10-22 18:13:01.287  INFO 7163 --- [  AsyncThread-1] com.ba.service.ReportService             : GAME report generate operation completed
     2020-10-22 18:13:01.541  INFO 7163 --- [  AsyncThread-2] com.ba.service.ReportService             : TODO report generate operation completed
     ```     
-    AsyncThread-1 ve AsyncThread-2 iki farklı threadin iş yaptığını gösterir. Yine saatteki (2020-10-22 18:13:01) bilgisi ise her iki thread in aynı anda çalıştığının diğer bir göstergesidir.
+    Üstteki loga bakıldığınd a**AsyncThread-1** ve **AsyncThread-2** iki farklı threadin iş yaptığını gösterir. <br/> 
+    Yine saatteki **(2020-10-22 18:13:01)** bilgisi ise her iki thread in aynı anda çalıştığının diğer bir göstergesidir.
     
 [index için tıklayın](../README.md)
