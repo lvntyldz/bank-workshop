@@ -42,6 +42,7 @@
 * ### Kullanım örnekleri
     Üstteki ayarları yaptıktan sonra broser üzerinden aşağıdaki adrese gidildiğinde tüm endpointlerin listesi collapsible menü ile gelecektir.
     http://localhost:8080/swagger-ui.html
+    
     ![](../screenshots/swaggerUIEndPointList.png)
 
 

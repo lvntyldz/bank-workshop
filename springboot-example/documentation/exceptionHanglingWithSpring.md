@@ -40,7 +40,10 @@
     @ControllerAdvice
     public class CustomResponseEntityExceptionHandler extends ResponseEntityExceptionHandler {...}
     ```
+    ControllerAdvice'ın merkeze nasıl konumlandığını gösteren görsel aşağıdadır.
+    ![](../screenshots/controllerAdvice.png)
 
+ 
 * ### @ExceptionHandler anotasyonu
     - Bu anotasyon ile Yakalanan exceptionlar handle edilebilir. 
     - Methodun üsütne yazılan  **@ExceptionHandler**  anotasyonuyla gövdesi doldurulan method ve oluşan Exception ilişkilendirilir.
@@ -76,5 +79,9 @@
     ```
     SELECT * FROM PERSONS 
     ```
+  
+* ### Kaynaklar
+    - https://medium.com/@jovannypcg/understanding-springs-controlleradvice-cd96a364033f
+    
 
 [index için tıklayın](../README.md)
