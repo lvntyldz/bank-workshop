@@ -1,5 +1,7 @@
 package com.ba.service;
 
+import com.ba.domain.Game;
+import com.ba.domain.Todo;
 import com.itextpdf.barcodes.Barcode128;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfWriter;
@@ -9,6 +11,8 @@ import com.itextpdf.layout.element.Image;
 import com.itextpdf.layout.element.Table;
 import com.itextpdf.layout.property.UnitValue;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class PdfService {
@@ -23,6 +27,35 @@ public class PdfService {
 
         Cell cell = new Cell().add(barcodeAsImage);
         table.addCell(cell);
+
+        addPrdfToDocument(pdfDoc, table);
+    }
+
+    public void generateTodoList(String destFilePath, List<Todo> todos) throws Exception {
+        PdfDocument pdfDoc = new PdfDocument(new PdfWriter(destFilePath));
+
+        Table table = new Table(UnitValue.createPercentArray(2)).useAllAvailableWidth();
+
+        todos.forEach(todo -> {
+            table.addCell(todo.getTitle());
+            table.addCell(todo.getDescription());
+        });
+
+        addPrdfToDocument(pdfDoc, table);
+    }
+
+    public void generateGameList(String destFilePath, List<Game> games) throws Exception {
+        PdfDocument pdfDoc = new PdfDocument(new PdfWriter(destFilePath));
+
+        Table table = new Table(UnitValue.createPercentArray(5)).useAllAvailableWidth();
+
+        games.forEach(game -> {
+            table.addCell(game.getName());
+            table.addCell(game.getDescription());
+            table.addCell(String.valueOf(game.getLeagueId()));
+            table.addCell(String.valueOf(game.getRoundNo()));
+            table.addCell(String.valueOf(game.getCreateDate()));
+        });
 
         addPrdfToDocument(pdfDoc, table);
     }
