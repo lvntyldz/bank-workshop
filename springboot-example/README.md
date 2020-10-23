@@ -16,6 +16,7 @@
 * ##### Hibernate Entity Inheritance Örneği3 (strategy = InheritanceType.TABLE_PER_CLASS)  [doküman için tıklayın](./documentation/entityInheritanceTablePerClassExample.md)
 * ##### Spring cache implementasyonu [doküman için tıklayın](./documentation/springCacheImpl.md)
 * ##### Spring cache kullanımı [doküman için tıklayın](./documentation/springCacheExamples.md)
+* ##### Redis ile Spring cache(distributed) kullanımı [doküman için tıklayın](./documentation/distributedCacheWithRedis.md)
 * ##### Spring kapsamlar(Bean Scopes) [doküman için tıklayın](./documentation/springBeanScopes.md)
 * ##### Spring Opsiyonel path variable [doküman için tıklayın](./documentation/generateBarcodeAndPdf.md)
 * ##### Spring ile Exception Handling [doküman için tıklayın](./documentation/exceptionHanglingWithSpring.md)
