@@ -7,10 +7,12 @@
     <groupId>org.example</groupId>
     <artifactId>training-examples</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
+
     <modules>
         <module>rss-reader</module>
+        <module>news-rss</module>
+        <module>inspect-external-jar</module>
     </modules>
-
 
 </project>
