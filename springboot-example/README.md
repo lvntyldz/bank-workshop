@@ -58,5 +58,6 @@
 - [ ] use mysql instead of h2
 - [ ] Jwt
 - [ ] oauth2
+- [ ] i18n
 
 [index için tıklayın](../README.md)
