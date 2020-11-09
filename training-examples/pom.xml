@@ -14,6 +14,7 @@
         <module>news-rss</module>
         <module>inspect-external-jar</module>
         <module>base-gui</module>
+        <module>tweet-news</module>
     </modules>
 
 </project>
