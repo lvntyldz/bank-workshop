@@ -1,10 +1,12 @@
 package com.ba.dto;
 
+import java.util.List;
+
 public class ResponseDTO {
 
     private String status;
     private int totalResults;
-    private ArticleDTO[] articles;
+    private List<ArticleDTO> articles;
 
     public String getStatus() {
         return status;
@@ -22,11 +24,11 @@ public class ResponseDTO {
         this.totalResults = totalResults;
     }
 
-    public ArticleDTO[] getArticles() {
+    public List<ArticleDTO> getArticles() {
         return articles;
     }
 
-    public void setArticles(ArticleDTO[] articles) {
+    public void setArticles(List<ArticleDTO> articles) {
         this.articles = articles;
     }
 }

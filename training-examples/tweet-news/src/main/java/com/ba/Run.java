@@ -1,5 +1,8 @@
 package com.ba;
 
+import com.ba.dto.ResponseDTO;
+import com.google.gson.Gson;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -19,8 +22,18 @@ public class Run {
         // print status code
         System.out.println(response.statusCode());
 
+        ResponseDTO responseDTO = convertResponseDTO(response);
+
+        System.out.println(responseDTO);
+    }
+
+    private static ResponseDTO convertResponseDTO(HttpResponse<String> response) {
         // print response body
         System.out.println(response.body());
+
+        Gson gson = new Gson();
+        ResponseDTO responseDTO = gson.fromJson(response.body(), ResponseDTO.class);
+        return responseDTO;
     }
 
     private static void printResponseHeader(HttpResponse<String> response) {
