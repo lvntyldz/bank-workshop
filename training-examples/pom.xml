@@ -15,6 +15,7 @@
         <module>inspect-external-jar</module>
         <module>base-gui</module>
         <module>tweet-news</module>
+        <module>xml-mapper</module>
     </modules>
 
 </project>
