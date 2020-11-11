@@ -29,6 +29,18 @@ public class Run {
         String jsonInString = gson.toJson(person);
         System.out.println(jsonInString);
 
+        Person personObj1 = gson.fromJson(jsonInString, Person.class);
+        Person personObj2 = gson.fromJson(jsonInString, Person.class);
+
+        System.out.println(personObj1);
+        System.out.println(personObj2);
+
+        Person person1 = xml.fromXml(personXmlString, Person.class);
+        Product product1 = xml.fromXml(productXmlString, Product.class);
+
+        System.out.println(person1);
+        System.out.println(product1);
+
     }
 
 }
