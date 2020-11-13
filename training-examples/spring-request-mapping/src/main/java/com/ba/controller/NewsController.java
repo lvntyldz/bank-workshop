@@ -17,7 +17,7 @@ public class NewsController {
     public News getNewsById(@PathVariable Long id) {
         Optional<News> optionalNews = allNews.stream().filter(news1 -> news1.getId() == id).findAny();
 
-        if(!optionalNews.isPresent()){
+        if (!optionalNews.isPresent()) {
             System.out.println("sonuç bulunamadı");
             return null;
         }
@@ -50,6 +50,13 @@ public class NewsController {
         optionalNews.get().setDescription(news.getDescription());
 
         return news;
+    }
+
+    @DeleteMapping("/{id}")
+    public List<News> deleteNews(@PathVariable Long id) {
+
+        allNews.removeIf(news -> news.getId() == id);
+        return allNews;
     }
 
 }
