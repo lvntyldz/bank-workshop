@@ -36,3 +36,8 @@ INSERT INTO CAR (ID, MODEL_NAME, MODEL_YEAR, CREATE_DATE) VALUES (2, 'Opel',2010
 INSERT INTO CAR (ID, MODEL_NAME, MODEL_YEAR, CREATE_DATE) VALUES (3, 'Renault',2000,  CURRENT_TIMESTAMP);
 INSERT INTO CAR (ID, MODEL_NAME, MODEL_YEAR, CREATE_DATE) VALUES (4, 'BMW',2019,  CURRENT_TIMESTAMP);
 INSERT INTO CAR (ID, MODEL_NAME, MODEL_YEAR, CREATE_DATE) VALUES (5, 'Volvo',2021,  CURRENT_TIMESTAMP);
+
+INSERT INTO NEWS (ID, TITLE, CATEGORY_NAME, DESCRIPTION) VALUES (1, 'Bir istifa daha','siyaset','Ekonomi bakanı istifa etti');
+INSERT INTO NEWS (ID, TITLE, CATEGORY_NAME, DESCRIPTION) VALUES (2, 'dolar düştü','ekonomi','Ekonomi bakanı istifa etti dolar düşüşe geçti');
+INSERT INTO NEWS (ID, TITLE, CATEGORY_NAME, DESCRIPTION) VALUES (3, 'Teknoloji hamlesi','teknoloji','daha çok inşaat, daha çok AR-GE');
+INSERT INTO NEWS (ID, TITLE, CATEGORY_NAME, DESCRIPTION) VALUES (4, 'ev fiyatları uçtu','ekonomi','Dolar,euro, altın düşüyor ancak ev fiyatları yükseliyor');

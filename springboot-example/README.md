@@ -4,6 +4,7 @@
 * ##### Ortam profillerinin[dev,prod] eklenmesi [doküman için tıklayın](./documentation/createEnvironmentProfiles.md)
 * ##### Properties dosyasından değer okuma[dev,prod] eklenmesi [doküman için tıklayın](./documentation/readParamFromConfigFile.md)
 * ##### Jpa-Hibernate ile  CRUD işlemleri [doküman için tıklayın](./documentation/CRUDWithJpaHibernate.md)
+* ##### Jpa-Hibernate ile  DISTINCT Query  [doküman için tıklayın](./documentation/jpaHibernateDistinctExample.md)
 * ##### Liquibase desteğinin eklenmesi [doküman için tıklayın](./documentation/addLiquibaseSupport.md)
 * ##### Liquibase SQLFile dan script çalıştırma [doküman için tıklayın](./documentation/addLiquibaseChangesetFromSqlFileData.md)
 * ##### Hibernate istatistik loglarının açılması [doküman için tıklayın](./documentation/addStatisticalLoggingSessionEvent.md)
