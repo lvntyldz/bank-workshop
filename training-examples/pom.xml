@@ -24,6 +24,7 @@
         <module>tweet-news</module>
         <module>xml-mapper</module>
         <module>spring-request-mapping</module>
+        <module>thymeleaf-crud-example</module>
     </modules>
 
 </project>
