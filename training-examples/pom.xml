@@ -25,6 +25,7 @@
         <module>xml-mapper</module>
         <module>spring-request-mapping</module>
         <module>thymeleaf-crud-example</module>
+        <module>spring-basic-auth-example</module>
     </modules>
 
 </project>

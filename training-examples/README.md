@@ -2,6 +2,6 @@
 * ##### xml mapper örneği [doküman için tıklayın](./xml-mapper/README.md)
 * ##### Spring Boot Request Mapping örneği [doküman için tıklayın](./spring-request-mapping/README.md)
 * ##### Spring Booot Thymeleaf CRUD örneği [doküman için tıklayın](./thymeleaf-crud-example/README.md)
-
+* ##### Spring Booot Basic Auth örneği [doküman için tıklayın](./spring-basic-auth-example/README.md)
 
 [index için tıklayın](../README.md)
