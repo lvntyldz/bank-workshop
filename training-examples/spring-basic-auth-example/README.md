@@ -130,10 +130,11 @@
     ```
 
 ###### NOTE: Header'a Authorization bilgisi aşağıdaki şekilde eklenmelidir.
-    ```
-    Authorization: Basic dXNlcjI6cGFzczI=
-    ```
-Basic ten sonraki data **<Username>:<Password>** bilgilerinin base64 olarak encode edilmiş halidir.
+```
+Authorization: Basic dXNlcjI6cGFzczI=
+```
+
+Basic ten sonraki data **Username:Password** bilgilerinin base64 olarak encode edilmiş halidir.
 
 
 [index için tıklayın](../README.md)
