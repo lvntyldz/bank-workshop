@@ -21,6 +21,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.headers().frameOptions().disable();//disable frame options
         http.authorizeRequests().antMatchers("/hi/user").access("hasAnyRole('USER','ADMIN')");
         http.authorizeRequests().antMatchers("/hi/admin").access("hasRole('ADMIN')");
+        http.authorizeRequests().antMatchers("/user/**").access("hasRole('ADMIN')");
         http.httpBasic();
     }
 
