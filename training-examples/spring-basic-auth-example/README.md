@@ -15,6 +15,25 @@
     public class SecurityConfig extends WebSecurityConfigurerAdapter {...}
     ```    
 
+* ### Bağımlılıkların eklenmesi
+    DB üzerinden authentication yapabilmek için pom.xml dosyasına **spring security, data jpa ve h2database** eklenmelidir.
+    ```
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-security</artifactId>
+    </dependency>
+    
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-data-jpa</artifactId>
+    </dependency>
+
+    <dependency>
+        <groupId>com.h2database</groupId>
+        <artifactId>h2</artifactId>
+    </dependency>
+    ```
+  
 * ### Yetki Tabloları
     - Spring Security ile basic auth işlemi yapılırken Spring aşağıdaki tabloları sorgulayarak yanıt döner. Eğer alltaki 3 tabloda(GROUPS, GROUP_AUTHORITIES, GROUP_MEMBERS)  kayıt bulamazsa ilk iki tabloya(USERS, AUTHORITIES) bakarak yanıt döner.
         - **USERS,**
