@@ -12,7 +12,7 @@ public class Run {
 
         List<String> classNames = new ArrayList();
 
-        ZipInputStream zip = new ZipInputStream(new FileInputStream("/Users/leventyildiz/development/git/seker-bank/sbank-workshop/training-examples/news-rss/target/news-rss-1.0.jar"));
+        ZipInputStream zip = new ZipInputStream(new FileInputStream("/Users/leventyildiz/development/git/sbank-workshop/training-examples/news-rss/target/news-rss-1.0.jar"));
         for (ZipEntry entry = zip.getNextEntry(); entry != null; entry = zip.getNextEntry()) {
             if (!entry.isDirectory() && entry.getName().endsWith(".class") && entry.getName().startsWith("com/ba")) {
                 // This ZipEntry represents a class. Now, what class does it represent?
