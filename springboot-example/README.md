@@ -50,9 +50,9 @@
 - [ ] hibernate ManyToMany relation
 - [ ] hibernate oneToOne relation
 - [ ] transaction management
-- [ ] Spring distributed cache 
+- [X] Spring distributed cache 
 - [ ] async task 
-- [ ] unitTest 
+- [X] unitTest 
 - [ ] criteria API
 - [ ] hibernate interceptors
 - [ ] Logging configuration
@@ -61,5 +61,7 @@
 - [ ] Jwt
 - [ ] oauth2
 - [ ] i18n
+- [ ] React Context API
+- [ ] Add file(Image) from client
 
 [index için tıklayın](../README.md)
