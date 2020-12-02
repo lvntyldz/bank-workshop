@@ -19,9 +19,7 @@ public class EmployeeService {
     public String addNewPartTimeEmployee() {
         PartTimeEmployee employee = new PartTimeEmployee("Ahmet", "YILMAZ", 30);
 
-        employeeRepository.save(employee);
-
-        return employee.toString();
+        return employeeRepository.save(employee).toString();
     }
 
     public String addFullTimeEmployee() {

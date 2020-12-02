@@ -22,4 +22,12 @@ public class PartTimeEmployee extends Employee {
     public void setHourlyRate(int hourlyRate) {
         this.hourlyRate = hourlyRate;
     }
+
+    @Override
+    public String toString() {
+        return "PartTimeEmployee{" +
+                "firstName=" + getFirstName() +","+
+                "lastName=" + getLastName() +
+                '}';
+    }
 }
