@@ -26,6 +26,7 @@
         <module>spring-request-mapping</module>
         <module>thymeleaf-crud-example</module>
         <module>spring-basic-auth-example</module>
+        <module>spring-image-upload</module>
     </modules>
 
     <build>
