@@ -64,5 +64,8 @@
 - [ ] React Context API
 - [ ] Add file(Image) from client
 - [ ] Model Mapper example 
+- [X] React context example : https://github.com/lvntyldz/tutorials/tree/master/react-usecontext-example 
+- [ ] projections
+- [ ] storedProcedure/View call
 
 [index için tıklayın](../README.md)
