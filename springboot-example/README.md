@@ -12,6 +12,7 @@
 * ##### Hibernate unidirectional(tek yönlü) OneToMany ilişki [doküman için tıklayın](./documentation/addOneToManyUnidirectionalRelation.md)
 * ##### Hibernate bidirectional(çift yönlü) OneToMany ilişki [doküman için tıklayın](./documentation/addOneToManyBidirectionalRelation.md)
 * ##### Hibernate unidirectional(tek yönlü) ManyToMany ilişki [doküman için tıklayın](./documentation/addManyToManyUnidirectionalRelation.md)
+* ##### Hibernate biidirectional(çift yönlü) ManyToMany ilişki [doküman için tıklayın](./documentation/addManyToManybidirectionalRelation.md)
 * ##### Hibernate FetchType kavramı [doküman için tıklayın](./documentation/hibernateFetchTypes.md)
 * ##### Hibernate Soft Delete işlemi [doküman için tıklayın](./documentation/hibernateSoftDetele.md)
 * ##### Hibernate Entity Inheritance Örneği1 (strategy = InheritanceType.JOINED)  [doküman için tıklayın](./documentation/entityInheritanceJoinedExample.md)
