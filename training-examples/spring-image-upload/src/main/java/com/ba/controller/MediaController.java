@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.nio.file.*;
 import java.util.List;
 
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @RequestMapping("/file")
 public class MediaController {
@@ -19,7 +20,6 @@ public class MediaController {
     private static final String PNG_EXTENSION = ".png";
     private static final String BMP_EXTENSION = ".bmp";
 
-    private static final String JPG_CONTENT = "image/jpeg";
     private static final String BMP_CONTENT = "image/bmp";
     private static final String PNG_CONTENT = "image/png";
 
