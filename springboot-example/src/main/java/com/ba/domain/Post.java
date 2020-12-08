@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
+@Entity(name = "TBL_POST")
 public class Post {
 
     @Id
@@ -16,7 +16,7 @@ public class Post {
     private String description;
 
     @ManyToMany
-    @JoinTable(name = "POST_TAGS", joinColumns = @JoinColumn(name = "post_id"), inverseJoinColumns = @JoinColumn(name = "tag_id"))
+    @JoinTable(name = "TBL_POST_TAGS", joinColumns = @JoinColumn(name = "post_id"), inverseJoinColumns = @JoinColumn(name = "tag_id"))
     private Set<Tag> tags = new HashSet<>();
 
     public Long getId() {
