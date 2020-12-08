@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -38,7 +37,6 @@ function App() {
 
         var requestOptions = {
             method: 'GET',
-            redirect: 'follow'
         };
         fetch("http://localhost:8080/file/list", requestOptions)
             .then(response => response.text())
@@ -55,7 +53,7 @@ function App() {
 
         imageList.map(v => {
             list.push(<li>
-                <img src={'data:image/png;base64,' + v.file_content} width="150" style={{margin: 10}}/>
+                <img src={'data:image/png;base64,' + v.fileContent} width="150" style={{margin: 10}}/>
             </li>)
         })
 

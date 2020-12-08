@@ -12,7 +12,7 @@ public class Media {
     private String name;
 
     @Column(length = 1000000)
-    private byte[] file_content;
+    private byte[] fileContent;
 
     public Long getId() {
         return id;
@@ -30,11 +30,11 @@ public class Media {
         this.name = name;
     }
 
-    public byte[] getFile_content() {
-        return file_content;
+    public byte[] getFileContent() {
+        return fileContent;
     }
 
-    public void setFile_content(byte[] file_content) {
-        this.file_content = file_content;
+    public void setFileContent(byte[] file_content) {
+        this.fileContent = file_content;
     }
 }

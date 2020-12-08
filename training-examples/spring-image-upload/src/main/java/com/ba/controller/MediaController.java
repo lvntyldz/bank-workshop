@@ -45,7 +45,7 @@ public class MediaController {
         byte[] bytes = file.getBytes();
 
         Media media = new Media();
-        media.setFile_content(bytes);
+        media.setFileContent(bytes);
         media.setName(imageName);
 
         repository.save(media);
