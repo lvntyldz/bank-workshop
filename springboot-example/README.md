@@ -68,4 +68,18 @@
 - [ ] projections
 - [ ] storedProcedure/View call
 
+## TODOS PHASE2
+- [ ] Spring Boot Validation
+- [ ] Spring Boot Mssql
+- [ ] Spring Boot postresql
+- [ ] Spring Boot mongo
+- [ ] Spring Boot RedisDb,
+- [ ] Spring Boot RabbitMq entegration
+- [ ] Lombok
+- [ ] MapStruct
+- [ ] Java Clean code ve Google Code Style
+- [ ] Rest API best practices
+- [ ] Test with POSTMAN 
+- [ ] Spring Test, Junit ve Mockito
+
 [index için tıklayın](../README.md)
