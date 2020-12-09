@@ -14,7 +14,7 @@ import java.util.stream.Stream;
 
 @RestController
 @RequestMapping("category")
-public class ProductController {
+public class CategoryController {
 
     @Autowired
     private CategoryRepository categoryRepository;
