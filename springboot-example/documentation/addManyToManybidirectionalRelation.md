@@ -30,9 +30,23 @@
     CREATE TABLE TBL_CATEGORY_PRODUCT (
         CATEGORY_ID BIGINT NOT NULL,
         PRODUCT_ID BIGINT NOT NULL,
-        PRIMARY KEY (CATEGORY_ID,PRODUCT_ID)
+        PRIMARY KEY (CATEGORY_ID,PRODUCT_ID),
+        CONSTRAINT PRODUCT_ID_FK FOREIGN KEY (PRODUCT_ID) REFERENCES TBL_PRODUCT(ID),
+        CONSTRAINT CATEGORY_ID_FK FOREIGN KEY (CATEGORY_ID) REFERENCES TBL_CATEGORIES(ID)
     );
     ```
+
+###### NOTE
+Burada **FOREIGN_KEY** ler tanımlanmazsa veritabanı tarafında veri bütünlüğü sağlanamaz. 
+Örn: Veritabanınan console üzerinden bağlanan bir kullanıcı  **TBL_CATEGORY_PRODUCT** tablosunda **PRODUCT_ID:1** olan bir ilişki varken **TBL_PRODUCT** tablosundan **ID:1** olan product kaydını silebilir. 
+Bu durumda ana tabloda kayıt olmamasına rağmen ara tabloda ilişki kaydı tutulmaya devam eder. 
+Bu sorunların önüne geçmek için **FOREIGN_KEY** ler kullanılır. 
+**FOREIGN_KEY ler kullanıcıyı önce ilişkiyi kaldırmaya zorlarlar.**
+  
+```
+CONSTRAINT PRODUCT_ID_FK FOREIGN KEY (PRODUCT_ID) REFERENCES TBL_PRODUCT(ID),
+CONSTRAINT CATEGORY_ID_FK FOREIGN KEY (CATEGORY_ID) REFERENCES TBL_CATEGORIES(ID)
+```
 
 * ### Repository tanımının yapılması
     - Category repository tanımı
@@ -81,7 +95,7 @@
 
 * ### ManyToMany ilişkinin Book'a eklenmesi 
     - ManyToMany ilişkiler ara tabloda tutulur.
-    - Burada bidirectional(çift yönlü)  ilişki kurulduğu için tanımlamalar hem kaynak hem de hedef entity de yapılır. Hedef entity de yapılır.    
+    - Burada bidirectional(çift yönlü)  ilişki kurulduğu için tanımlamalar hem kaynak hem de hedef entity de yapılır.    
     - @JoinTable ile bir tablo ismi verilmezse hibernate iki tablonun isimleriyle bir ara tablo oluşturur.
         ```
         @JoinTable(name = "TBL_CATEGORY_PRODUCT"
@@ -102,14 +116,20 @@
         @JoinTable(name = "TBL_CATEGORY_PRODUCT", joinColumns = @JoinColumn(name = "category_id"), inverseJoinColumns = @JoinColumn(name = "product_id"))
         private Set<Product> products = new HashSet<>();
         ```
-`
+
     - Hedef entity de ise sadece mappedBy annotation ı ile kaynak entity deki değişken isminin verilmesi yeterlidir.
     ```
     @JsonBackReference
     @ManyToMany(mappedBy = "products")
     private Set<Category> categories = new HashSet<>();
     ```
-
+###### NOTE
+Kaynak entitydeki @JsonManagedReference ve hedef entitydeki @JsonBackReference annotationları jackson'un Infinite Recursion probleminden kurtulmak için eklenmiştir.
+Java objeleri üzerinde çift yönlü ilişki bu anotasyonları kullanmadan da kurulmuş olmaktadır.  
+Çift yönlü bağın kurulduğunu görmek için aşdağıdaki Kategori ve Product listesinden dönen Entityler debug edilerek incelenebilir.
+- Category listesi : http://localhost:8080/category/list 
+- Product listesi : http://localhost:8080/category/list-products 
+  
 * ### Endpointlere erişim
     - Category listesi : http://localhost:8080/category/list 
     - Product listesi : http://localhost:8080/category/list-products 
