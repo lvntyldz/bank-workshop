@@ -50,6 +50,9 @@ public class CategoryController {
         product.setPrice(100);
         product.setCategories(Stream.of(category1,category2).collect(Collectors.toSet()));
 
+        category1.getProducts().add(product);
+        category2.getProducts().add(product);
+
         Product savedProduct = productRepository.save(product);
 
         return savedProduct.toString();
