@@ -27,6 +27,7 @@
         <module>thymeleaf-crud-example</module>
         <module>spring-basic-auth-example</module>
         <module>spring-image-upload</module>
+        <module>spring-auth-custom-user-detail-sservice</module>
     </modules>
 
     <build>
