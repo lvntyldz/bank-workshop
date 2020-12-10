@@ -48,31 +48,32 @@
 
 
 ## TODOS
+- [X] React context example : https://github.com/lvntyldz/tutorials/tree/master/react-usecontext-example 
+- [X] hibernate ManyToMany relation
+- [X] Spring distributed cache 
+- [X] unitTest 
+- [X] builder pattern
 
-- [ ] hibernate ManyToMany relation
 - [ ] hibernate oneToOne relation
 - [ ] transaction management
-- [X] Spring distributed cache 
 - [ ] async task 
-- [X] unitTest 
 - [ ] criteria API
 - [ ] hibernate interceptors
 - [ ] Logging configuration
-- [ ] More design pattern example
 - [ ] use mysql instead of h2
 - [ ] Jwt
 - [ ] oauth2
 - [ ] i18n
 - [ ] React Context API
 - [ ] Model Mapper example 
-- [X] React context example : https://github.com/lvntyldz/tutorials/tree/master/react-usecontext-example 
 - [ ] projections
 - [ ] storedProcedure/View call
-- [ ] builder pattern
+- [ ] More design pattern example
 - [ ] singleton pattern
 - [ ] strategy pattern
 - [ ] facede pattern
 - [ ] observer pattern
+- [ ] Spring pagination example (https://www.baeldung.com/spring-data-jpa-pagination-sorting)
 
 ## TODOS PHASE2
 - [ ] Spring Boot Validation
