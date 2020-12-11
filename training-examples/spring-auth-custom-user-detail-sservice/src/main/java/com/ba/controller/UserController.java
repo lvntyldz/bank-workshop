@@ -53,6 +53,8 @@ public class UserController {
         user.setPassword(encoder.encode("1234"));
         user.getRoles().add(role);
 
+        userRepository.save(user);
+
         return "user updated";
     }
 
