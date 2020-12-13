@@ -68,7 +68,7 @@
 - [ ] React Context API
 - [ ] Model Mapper example 
 - [ ] projections
-- [ ] storedProcedure/View call
+- [ ] storedProcedure/View call (https://www.baeldung.com/spring-data-jpa-stored-procedures)
 - [ ] More design pattern example
 - [ ] singleton pattern
 - [ ] strategy pattern
