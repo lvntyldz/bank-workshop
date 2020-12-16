@@ -7,6 +7,7 @@ import org.mapstruct.Mapping;
 
 @Mapper
 public interface ClassroomMapper {
+
     @Mapping(source = "name", target = "isim")
     @Mapping(source = "no", target = "roomNo")
     ClassroomDTO toDto(Classroom entity);
