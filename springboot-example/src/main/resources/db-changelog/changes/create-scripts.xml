@@ -12,4 +12,8 @@
         <sqlFile path="/db-changelog/changes/scripts/insert.sql" stripComments="true"/>
     </changeSet>
 
+    <changeSet author="levent.yildiz" id="16-12-2020_11:38" runOnChange="true">
+        <sqlFile path="/db-changelog/changes/scripts/countries.sql" stripComments="true"/>
+    </changeSet>
+
 </databaseChangeLog>

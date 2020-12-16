@@ -31,6 +31,7 @@
 - [ ] Swagger Entegrasyonu [doküman için tıklayın](./documentation/swaggerIntegration.md)
 - [ ] Actuator Ekleme [doküman için tıklayın](./documentation/addActuator.md)
 - [ ] Projeye Mapper(MapStruct) eklenmesi ve örnekler  [doküman için tıklayın](./documentation/mapStructImplementationAndExample.md)
+- [ ] Spring sayfalama örneği  [doküman için tıklayın](./documentation/springPagingExample.md)
 
 **notes**
 - [ ] Bazı Hibernate notları [doküman için tıklayın](./documentation/hibernateRelationNotes.md)
@@ -73,7 +74,6 @@
 - [ ] strategy pattern
 - [ ] facede pattern
 - [ ] observer pattern
-- [ ] Spring pagination example (https://www.baeldung.com/spring-data-jpa-pagination-sorting)
 
 ## TODOS PHASE2
 - [ ] Spring Boot Validation
@@ -88,5 +88,8 @@
 - [ ] Rest API best practices
 - [ ] Test with POSTMAN 
 - [ ] Spring Test, Junit ve Mockito
+
+## TODO PHASE3
+- [ ] Mapstruct dependency injection using **@Mapper(componentModel="spring")**
 
 [index için tıklayın](../README.md)
