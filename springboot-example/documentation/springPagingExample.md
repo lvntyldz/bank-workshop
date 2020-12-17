@@ -92,13 +92,13 @@ public Slice<Country> searchCountriesV2(@RequestParam String countryName, Pageab
 ```
 
 * ### Notlar
-- Yukarıdaki örneklerde V1 de **Page<Country>** tipinde bir değer dönülmektedir. V2 de ise **Slice<Country>** şeklinde bir değer dönülmektedir.
+- Yukarıdaki örneklerde V1 de **Page< Country>** tipinde bir değer dönülmektedir. V2 de ise **Slice< Country>** şeklinde bir değer dönülmektedir.
 - Bu ikisi arasındaki fark total cont sorgusudur. 
 - İlk kullanımda ilgili search'e ait kaç kaydın olduğu bilgisi de dönülür.
 - ikinci kullanımda ise sadece birsonraki sayfada kayıt var mı yok mu bilgisi dönülür. 
 - ilk kullanımda  count bilgisi için de ayrı bir SQL sorgusu çalışacağı için ikinci kullanım daha performansldır.
 - Ayrıca ikinci kullanım "load more" özelliği olan ekran ve uygulamalarda kullanılmaktadır 
-- NOT: Slice'in bu örnekte aktif olması için repository nin de **Slice<Country>** dönmesi gerekmektedir  
+- NOT: Slice'in bu örnekte aktif olması için repository nin de **Slice< Country>** dönmesi gerekmektedir  
  
 * ### Endpointler
 - Paging siz tüm liste : http://localhost:8080/countries/list
@@ -106,7 +106,7 @@ public Slice<Country> searchCountriesV2(@RequestParam String countryName, Pageab
 - V2: http://localhost:8080/countries/v2/search?countryName=republic&page=0&size=5
 
 * ### Hibernate loglarının incelenmesi
-- **Page<Country>** hibernate sorgusu 
+- **Page< Country>** hibernate sorgusu 
 ```
 Hibernate: 
     select
@@ -119,7 +119,7 @@ Hibernate:
         upper(country0_.name) like upper(?) escape ? limit ?
 ```
 
-- **Page<Country>** hibernate total count sorgusu
+- **Page< Country>** hibernate total count sorgusu
 ```
 Hibernate: 
     select
@@ -130,7 +130,7 @@ Hibernate:
         upper(country0_.name) like upper(?) escape ?
 ```
 
-- **Slice<Country>** sorgusu 
+- **Slice< Country>** sorgusu 
 ```
 Hibernate: 
     select

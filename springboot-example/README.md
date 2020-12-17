@@ -31,6 +31,7 @@
 - [ ] Swagger Entegrasyonu [doküman için tıklayın](./documentation/swaggerIntegration.md)
 - [ ] Actuator Ekleme [doküman için tıklayın](./documentation/addActuator.md)
 - [ ] Projeye Mapper(MapStruct) eklenmesi ve örnekler  [doküman için tıklayın](./documentation/mapStructImplementationAndExample.md)
+- [ ] hibernate OneToOne relation örneği (mapstruct içinde örneklenmiştir) [doküman için tıklayın](./documentation/mapStructImplementationAndExample.md)
 - [ ] Spring sayfalama örneği  [doküman için tıklayın](./documentation/springPagingExample.md)
 
 **notes**
@@ -55,7 +56,6 @@
 - [X] React context example : https://github.com/lvntyldz/tutorials/tree/master/react-usecontext-example 
 
 ## TODOS
-- [ ] hibernate oneToOne relation
 - [ ] transaction management
 - [ ] async task 
 - [ ] criteria API
@@ -65,8 +65,6 @@
 - [ ] Jwt
 - [ ] oauth2
 - [ ] i18n
-- [ ] React Context API
-- [ ] Model Mapper example 
 - [ ] projections
 - [ ] storedProcedure/View call (https://www.baeldung.com/spring-data-jpa-stored-procedures)
 - [ ] More design pattern example
@@ -80,10 +78,10 @@
 - [ ] Spring Boot Mssql
 - [ ] Spring Boot postresql
 - [ ] Spring Boot mongo
-- [ ] Spring Boot RedisDb,
+- [x] Spring Boot RedisDb,
 - [ ] Spring Boot RabbitMq entegration
-- [ ] Lombok
-- [ ] MapStruct
+- [x] Lombok
+- [x] MapStruct
 - [ ] Java Clean code ve Google Code Style
 - [ ] Rest API best practices
 - [ ] Test with POSTMAN 
