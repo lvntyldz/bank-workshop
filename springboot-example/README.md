@@ -33,6 +33,7 @@
 - [ ] Projeye Mapper(MapStruct) eklenmesi ve örnekler  [doküman için tıklayın](./documentation/mapStructImplementationAndExample.md)
 - [ ] hibernate OneToOne relation örneği (mapstruct içinde örneklenmiştir) [doküman için tıklayın](./documentation/mapStructImplementationAndExample.md)
 - [ ] Spring sayfalama örneği  [doküman için tıklayın](./documentation/springPagingExample.md)
+- [ ] Spring çoklu dil(i18n) desteği ve örnek bir endpoint  [doküman için tıklayın](./documentation/springBootInternalization.md)
 
 **notes**
 - [ ] Bazı Hibernate notları [doküman için tıklayın](./documentation/hibernateRelationNotes.md)
@@ -64,7 +65,6 @@
 - [ ] use mysql instead of h2
 - [ ] Jwt
 - [ ] oauth2
-- [ ] i18n
 - [ ] projections
 - [ ] storedProcedure/View call (https://www.baeldung.com/spring-data-jpa-stored-procedures)
 - [ ] More design pattern example
