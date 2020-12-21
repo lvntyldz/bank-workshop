@@ -90,4 +90,35 @@
 ## TODO PHASE3
 - [ ] Mapstruct dependency injection using **@Mapper(componentModel="spring")**
 
+## TODO BANKA
+- [ ] iBATIS
+- [X] Spring, Spring Cache ve önemli Spring bileşenleri
+- [X] Redis
+- [ ] SOAP, banka içindeki çoğu web servis bu şekilde.
+- [X] REST, banka dışı entegrasyonlar için gerekli.
+- [X] Swagger
+- [ ] EJB kavramı ders olarak anlatılsın, Aurora bunu kullanıyor.
+- [ ] Temel Java konuları
+- [ ] Threading, özellikle belirtildi.
+- [ ] git komutları (pull request, merge vs)
+- [ ] Reflection üzerinden servis çağırma
+
+## Kullanılan Teknolojiler(BANKA)
+- Java 1.6
+- Java - Threading
+- IDE olarak Eclipse.
+- Framework olarak, Dijital Kanallar tarafında Spring kullanılıyor. core banking tarafında, Cybersoft'un yazdığı Aurora framework.
+- Java + SQL içeren pek çok batch işlem
+- EJB
+- iBATIS
+- Oracle, PL/SQL
+- JavaScript: Dijital Kanallar tarafında yoğun olarak kullanılıyor
+- React
+- XML
+- Redis
+- SOAP
+- REST
+- git, Bitbucket
+- Reflection üzerinden servis çağırma
+
 [index için tıklayın](../README.md)
