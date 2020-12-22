@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet author="levent.yildiz" id="22-12-2020_11:38">
+        <loadData
+                file="/dataDec-21-2020.csv"
+                separator="|"
+                tableName="salary">
+            <column header="fullname" name="fullname" type="STRING"/>
+            <column header="email" name="email" type="STRING"/>
+            <column header="phone" name="phone" type="STRING"/>
+            <column header="city" name="city" type="STRING"/>
+            <column header="salary" name="salary" type="NUMERIC"/>
+            <column header="sdate" name="sdate" type="TIMESTAMP"/>
+        </loadData>
+
+    </changeSet>
+
+    <changeSet author="levent.yildiz" id="22-12-2020_11:40">
+        <sql>
+            <![CDATA[
+                UPDATE SALARY SET
+                    SDATE = @T := TIMESTAMP '2015-01-01 01:01:01'
+                        + RAND() * INTERVAL '1500 00:00:00' DAY TO SECOND;
+            ]]>
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>
