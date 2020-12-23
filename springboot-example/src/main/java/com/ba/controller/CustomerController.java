@@ -14,7 +14,13 @@ public class CustomerController {
 
     @GetMapping("/{id}")
     public Customer getCustomerById(@PathVariable Long id) {
-        return service.getCustomerById(id);
+        Customer customer = service.getCustomerById(id);
+
+        customer.getOrders().forEach(o->{
+            System.out.println(o.getId());
+        });
+
+        return customer;
     }
 
     @GetMapping("/{id}/{newName}")

@@ -14,10 +14,11 @@ public class Order {
 
     private int price;
 
-    @ManyToOne
+    @ManyToOne(
+            //fetch = FetchType.EAGER
+            fetch = FetchType.LAZY
+    )
     @JoinColumn(
-            //fetch = FetchType.EAGER,
-            //fetch = FetchType.LAZY,
             name = "customer_id"
     )
     private Customer customer;
