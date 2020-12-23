@@ -28,11 +28,11 @@
 - [ ] Spring ile Exception Handling [doküman için tıklayın](./documentation/exceptionHanglingWithSpring.md)
 - [ ] Spring Async işlemler [doküman için tıklayın](./documentation/assAsyncExample.md)
 - [ ] Spring Loglama ayarları [doküman için tıklayın](./documentation/springLoggingConfiguration.md)
-- [ ] Swagger Entegrasyonu [doküman için tıklayın](./documentation/swaggerIntegration.md)
+- [X] Swagger Entegrasyonu [doküman için tıklayın](./documentation/swaggerIntegration.md)
 - [ ] Actuator Ekleme [doküman için tıklayın](./documentation/addActuator.md)
 - [X] Projeye Mapper(MapStruct) eklenmesi ve örnekler  [doküman için tıklayın](./documentation/mapStructImplementationAndExample.md)
-- [ ] hibernate OneToOne relation örneği (mapstruct içinde örneklenmiştir) [doküman için tıklayın](./documentation/mapStructImplementationAndExample.md)
-- [ ] Spring sayfalama örneği  [doküman için tıklayın](./documentation/springPagingExample.md)
+- [X] hibernate OneToOne relation örneği (mapstruct içinde örneklenmiştir) [doküman için tıklayın](./documentation/mapStructImplementationAndExample.md)
+- [X] Spring sayfalama örneği  [doküman için tıklayın](./documentation/springPagingExample.md)
 - [ ] Spring çoklu dil(i18n) desteği ve örnek bir endpoint  [doküman için tıklayın](./documentation/springBootInternalization.md)
 
 **notes**
