@@ -11,6 +11,7 @@
 
     <modules>
         <module>simple-soap-server</module>
+        <module>simple-soap-client</module>
     </modules>
 
 </project>
