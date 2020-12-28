@@ -1,7 +1,7 @@
-######NOT : Başladan önce cache server olarak redis kullanılacağı için ortamda redis kurulu değilse  redis kurulumu [doküman için tıklayın](./documentation/dockerRedisExample.md) adresi ziyaret edilmelidir.
-######NOT2 : application.properties file üzerinden redis cache aktif edilmemiştir. Bu örnekler uygulama üzerinden inceleneceği zaman aşağıdaki parametre aktif edilmelidir.
-######NOT3 : Redis cache'i aktif etmek için yine yorum'a çevrilen RedisCacheConfiguration class'ıda aktif java class'ına çevrilmelidir.
-######NOT4 : Redis cache'i aktif etmek için yine yorum'a çevrilen pom.xml dosyasındaki redis bağımlılıkları aktif edilmelidir.
+###### NOT : Başladan önce cache server olarak redis kullanılacağı için ortamda redis kurulu değilse  redis kurulumu [doküman için tıklayın](./documentation/dockerRedisExample.md) adresi ziyaret edilmelidir.
+###### NOT2 : application.properties file üzerinden redis cache aktif edilmemiştir. Bu örnekler uygulama üzerinden inceleneceği zaman aşağıdaki parametre aktif edilmelidir.
+###### NOT3 : Redis cache'i aktif etmek için yine yorum'a çevrilen RedisCacheConfiguration class'ıda aktif java class'ına çevrilmelidir.
+###### NOT4 : Redis cache'i aktif etmek için yine yorum'a çevrilen pom.xml dosyasındaki redis bağımlılıkları aktif edilmelidir.
 
 ```
 #spring.cache.type=redis

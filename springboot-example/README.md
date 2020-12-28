@@ -25,7 +25,7 @@
 - [ ] Spring kapsamlar(Bean Scopes) [doküman için tıklayın](./documentation/springBeanScopes.md)
 - [ ] Spring Application Contexten Bean Alma [doküman için tıklayın](./documentation/getBeansFromAppContext.md)
 - [ ] Spring Opsiyonel path variable [doküman için tıklayın](./documentation/generateBarcodeAndPdf.md)
-- [ ] Spring ile Exception Handling [doküman için tıklayın](./documentation/exceptionHanglingWithSpring.md)
+- [X] Spring ile Exception Handling [doküman için tıklayın](./documentation/exceptionHanglingWithSpring.md)
 - [ ] Spring Async işlemler [doküman için tıklayın](./documentation/assAsyncExample.md)
 - [ ] Spring Loglama ayarları [doküman için tıklayın](./documentation/springLoggingConfiguration.md)
 - [X] Swagger Entegrasyonu [doküman için tıklayın](./documentation/swaggerIntegration.md)
@@ -33,7 +33,7 @@
 - [X] Projeye Mapper(MapStruct) eklenmesi ve örnekler  [doküman için tıklayın](./documentation/mapStructImplementationAndExample.md)
 - [X] hibernate OneToOne relation örneği (mapstruct içinde örneklenmiştir) [doküman için tıklayın](./documentation/mapStructImplementationAndExample.md)
 - [X] Spring sayfalama örneği  [doküman için tıklayın](./documentation/springPagingExample.md)
-- [ ] Spring çoklu dil(i18n) desteği ve örnek bir endpoint  [doküman için tıklayın](./documentation/springBootInternalization.md)
+- [X] Spring çoklu dil(i18n) desteği ve örnek bir endpoint  [doküman için tıklayın](./documentation/springBootInternalization.md)
 
 **notes**
 - [ ] Bazı Hibernate notları [doküman için tıklayın](./documentation/hibernateRelationNotes.md)
@@ -46,7 +46,7 @@
 <br/>
 
 **servers**
-- [ ] Redis kurulumu [doküman için tıklayın](./documentation/dockerRedisExample.md)
+- [X] Redis kurulumu [doküman için tıklayın](./documentation/dockerRedisExample.md)
 <br/>
 
 **Patterns**
