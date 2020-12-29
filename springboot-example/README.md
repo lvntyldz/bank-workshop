@@ -35,6 +35,7 @@
 - [X] Spring sayfalama örneği  [doküman için tıklayın](./documentation/springPagingExample.md)
 - [X] Spring çoklu dil(i18n) desteği ve örnek bir endpoint  [doküman için tıklayın](./documentation/springBootInternalization.md)
 - [X] Spring Transaction Management [doküman için tıklayın](./documentation/springTransactionManagement.md)
+- [ ] Spring Session [doküman için tıklayın](./documentation/springBootSession.md)
 
 **notes**
 - [ ] Bazı Hibernate notları [doküman için tıklayın](./documentation/hibernateRelationNotes.md)
