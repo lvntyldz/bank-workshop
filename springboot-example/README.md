@@ -34,6 +34,7 @@
 - [X] hibernate OneToOne relation örneği (mapstruct içinde örneklenmiştir) [doküman için tıklayın](./documentation/mapStructImplementationAndExample.md)
 - [X] Spring sayfalama örneği  [doküman için tıklayın](./documentation/springPagingExample.md)
 - [X] Spring çoklu dil(i18n) desteği ve örnek bir endpoint  [doküman için tıklayın](./documentation/springBootInternalization.md)
+- [X] Spring Transaction Management [doküman için tıklayın](./documentation/springTransactionManagement.md)
 
 **notes**
 - [ ] Bazı Hibernate notları [doküman için tıklayın](./documentation/hibernateRelationNotes.md)
@@ -57,7 +58,6 @@
 - [X] React context example : https://github.com/lvntyldz/tutorials/tree/master/react-usecontext-example 
 
 ## TODOS
-- [ ] transaction management
 - [ ] async task 
 - [ ] criteria API
 - [ ] hibernate interceptors

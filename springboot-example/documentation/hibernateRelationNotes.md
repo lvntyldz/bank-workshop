@@ -13,6 +13,11 @@ Hibernate transaction aşamasında objeler üzerindeki değişikliklieri tespit 
 
 ---
 
+**@Transactional** annotasuonu Class düzeyinde tanımlanırsa o class içindeki tüm public methodlar transactional olarak işaretlenmiş olur.
+Method düzeyinde tanım yapılmışsa sadece ilgili method transactional olur.
+
+---
+
 Hibernate'in objeler arasındaki ilişkilerinde default **fetchType** tanımı aşağıdaki gibidir.
 - **OneToMany:** LAZY
 - **ManyToOne:** EAGER
