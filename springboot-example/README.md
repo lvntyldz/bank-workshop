@@ -37,6 +37,7 @@
 - [X] Spring Transaction Management [doküman için tıklayın](./documentation/springTransactionManagement.md)
 - [ ] ~~Spring Session~~ [doküman için tıklayın](./documentation/springBootSession.md)
 - [X] Spring Validation [doküman için tıklayın](./documentation/springValidationExample.md)
+- [X] Mapstruct dependency injection using **@Mapper(componentModel="spring")** (validation içinde örneklenmiştir) [doküman için tıklayın](./documentation/springValidationExample.md)
 
 **notes**
 - [ ] Bazı Hibernate notları [doküman için tıklayın](./documentation/hibernateRelationNotes.md)
@@ -88,9 +89,6 @@
 - [ ] Rest API best practices
 - [ ] Test with POSTMAN 
 - [ ] Spring Test, Junit ve Mockito
-
-## TODO PHASE3
-- [ ] Mapstruct dependency injection using **@Mapper(componentModel="spring")**
 
 ## TODO BANKA
 - [ ] iBATIS
