@@ -2,8 +2,10 @@ package com.ba.component;
 
 import org.springframework.stereotype.Component;
 
+import java.io.Serializable;
+
 @Component
-public class SingletonScopeComponent {
+public class SingletonScopeComponent implements Serializable {
 
     private static int instanceCount;
 
