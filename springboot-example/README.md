@@ -23,7 +23,7 @@
 - [X] Spring cache kullanımı [doküman için tıklayın](./documentation/springCacheExamples.md)
 - [X] Redis ile Spring cache(distributed) kullanımı [doküman için tıklayın](./documentation/distributedCacheWithRedis.md)
 - [X] Spring kapsamlar(Bean Scopes) [doküman için tıklayın](./documentation/springBeanScopes.md)
-- [ ] Spring Application Contexten Bean Alma [doküman için tıklayın](./documentation/getBeansFromAppContext.md)
+- [X] Spring Application Contexten Bean Alma [doküman için tıklayın](./documentation/getBeansFromAppContext.md)
 - [X] Spring Opsiyonel path variable [doküman için tıklayın](./documentation/generateBarcodeAndPdf.md)
 - [X] Spring ile Exception Handling [doküman için tıklayın](./documentation/exceptionHanglingWithSpring.md)
 - [ ] Spring Async işlemler [doküman için tıklayın](./documentation/assAsyncExample.md)
