@@ -7,13 +7,14 @@ import java.io.Serializable;
 @Component
 public class SingletonScopeComponent implements Serializable {
 
-    private static int instanceCount;
+  private static int instanceCount;
 
-    public SingletonScopeComponent() {
-        instanceCount++;
-    }
+  public SingletonScopeComponent() {
+    instanceCount++;
+  }
 
-    public void printInstanceInfo() {
-        System.out.println("SingletonScope instanceCount : " + instanceCount + " - hashCode : " + this.hashCode());
-    }
+  public void printInstanceInfo() {
+    System.out.println(
+        "SingletonScope instanceCount : " + instanceCount + " - hashCode : " + this.hashCode());
+  }
 }

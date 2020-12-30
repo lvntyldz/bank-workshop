@@ -8,15 +8,16 @@ import java.io.Serializable;
 
 @Component
 @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
-public class PrototypeScopeComponent  implements Serializable {
+public class PrototypeScopeComponent implements Serializable {
 
-    private static int instanceCount;
+  private static int instanceCount;
 
-    public PrototypeScopeComponent() {
-        instanceCount++;
-    }
+  public PrototypeScopeComponent() {
+    instanceCount++;
+  }
 
-    public void printInstanceInfo() {
-        System.out.println("PrototypeScope instanceCount : " + instanceCount + " - hashCode : " + this.hashCode());
-    }
+  public void printInstanceInfo() {
+    System.out.println(
+        "PrototypeScope instanceCount : " + instanceCount + " - hashCode : " + this.hashCode());
+  }
 }

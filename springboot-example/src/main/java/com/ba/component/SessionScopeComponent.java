@@ -7,15 +7,16 @@ import java.io.Serializable;
 
 @Component
 @SessionScope
-public class SessionScopeComponent  implements Serializable {
+public class SessionScopeComponent implements Serializable {
 
-    private static int instanceCount;
+  private static int instanceCount;
 
-    public SessionScopeComponent() {
-        instanceCount++;
-    }
+  public SessionScopeComponent() {
+    instanceCount++;
+  }
 
-    public void printInstanceInfo() {
-        System.out.println("SessionScope instanceCount : " + instanceCount + " - hashCode : " + this.hashCode());
-    }
+  public void printInstanceInfo() {
+    System.out.println(
+        "SessionScope instanceCount : " + instanceCount + " - hashCode : " + this.hashCode());
+  }
 }
