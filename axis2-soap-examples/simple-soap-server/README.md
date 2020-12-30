@@ -133,5 +133,6 @@ $ rm -rf ~/development/servers/tomcat7/webapps/axis2/WEB-INF/services/simple-soa
 - https://www.rukspot.com/blog/how_to_setup_axis_2_with_apache_tomcat
 - https://www.rukspot.com/blog/axis_2_sample_web_service_with_maven_and_eclipse
 - https://www.rukspot.com/blog/axis_2_sample_web_service_client_with_maven_and_eclipse
+- https://www.journaldev.com/9131/soap-webservices-in-java-example-eclipse
 
 [index için tıklayın](../README.md)

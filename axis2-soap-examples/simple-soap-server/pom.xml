@@ -13,6 +13,10 @@
 
     <artifactId>simple-soap-server</artifactId>
 
+    <properties>
+        <compiler-plugin.source>6</compiler-plugin.source>
+    </properties>
+
     <build>
         <plugins>
             <plugin>
@@ -29,6 +33,14 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${compiler-plugin.source}</source>
+                    <target>${compiler-plugin.source}</target>
+                </configuration>
             </plugin>
         </plugins>
     </build>

@@ -1,39 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <serviceGroup>
-    <service name="CalculatorService">
-        <description>
-            Hesaplama Servisleri
-        </description>
-
-        <parameter name="ServiceClass">com.ba.service.CalculatorService</parameter>
-
-        <operation name="subtraction">
-            <messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
-        </operation>
-
-        <operation name="addition">
-            <messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
-        </operation>
-
-        <operation name="multiplication">
-            <messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
-        </operation>
-
-        <operation name="division">
-            <messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
-        </operation>
-    </service>
-
-    <service name="RegionService">
-        <description>
-            Bölge Servi̇sleri̇
-        </description>
-
-        <parameter name="ServiceClass">com.ba.service.RegionService</parameter>
-
-        <operation name="getRegions">
-            <messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
-        </operation>
-
+    <service name="PersonServiceImpl" >
+        <Description>
+            Person Service
+        </Description>
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-only" class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />
+            <messageReceiver  mep="http://www.w3.org/2004/08/wsdl/in-out"  class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+        </messageReceivers>
+        <parameter name="ServiceClass" locked="false">com.ba.service.PersonServiceImpl</parameter>
     </service>
 </serviceGroup>
