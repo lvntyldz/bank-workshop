@@ -33,7 +33,9 @@ public class Run {
     public static String dtoToXML(PersonDTO personDto) throws JAXBException {
         JAXBContext jaxbContext = JAXBContext.newInstance(PersonDTO.class);
         Marshaller marshaller = jaxbContext.createMarshaller();
+
         marshaller.setProperty("jaxb.fragment", Boolean.TRUE);
+
         StringWriter stringWriter = new StringWriter();
         marshaller.marshal(personDto, stringWriter);
 
