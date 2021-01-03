@@ -1,25 +1,13 @@
-what is ibatis ?
+* ### ibatis vs hibernate
+ibatis | hibernate | 
+--- |--- |
+SQL oluşturmaz. SQL'i developer yazar.|Java classlarından SQL sorguları oluşturur|
+Dadatabase bağımlı SQL ler kullanır | Java Objelerini kullanılan DB nin istediği formattaki sorgulara kendisi dönüştürür |
+Resultsetleri developer Pojo lara MAP eder | Hibernate DB ye yapılan sorguları MAP ederek result döner |
+Direk SQL çalıştırdığı için Storedprocedure çağırmak kolaydır IBATIS te | Hibenate te bu işlem biraz daha uğraştırıcıdır |
 
-a jdbc framework
-developers write sql, ibatis executes it using jdbc.
-no more try/catch/finally/try/catch.
-an sql mapper
-automatically maps object properties to prepared statement parameters.
-automatically maps result sets to objects.
-support for getting rid of n+1 queries.
-a transaction manager
-ibatis will provide transaction management for database operations if no other transaction manager is available.
-ibatis will use external transaction management (spring, ejb cmt, etc.) if available.
-great integration with spring, but can also be used without spring (the spring folks were early supporters of ibatis).
-what isn’t ibatis ?
-
-an orm
-does not generate sql
-does not have a proprietary query language
-does not know about object identity
-does not transparently persist objects
-does not build an object cache
-
-
+* ### Kaynaklar
+- https://www.tutorialspoint.com/ibatis/ibatis_create_operation.htm
+- https://www.tutorialspoint.com/ibatis/ibatis_vs_hibernate.htm#:~:text=Difference%20between%20iBATIS%20and%20Hibernate,tools%20available%20in%20the%20industry.&text=iBATIS%20uses%20SQL%20which%20could,to%20change%20db%20in%20Hibernate.
     
 [index için tıklayın](../README.md)
