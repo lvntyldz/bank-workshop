@@ -6,11 +6,13 @@ import com.ibatis.sqlmap.client.SqlMapClient;
 import java.util.List;
 
 public interface UserDao {
-    public List<UserDTO> addUsers(List<UserDTO> users, SqlMapClient sqlmapClient);
+    public List<UserDTO> addUsers(List<UserDTO> users, SqlMapClient client);
 
-    public UserDTO addUser(UserDTO user, SqlMapClient sqlmapClient);
+    public List<UserDTO> listUsers(SqlMapClient client);
 
-    public UserDTO getUserById(Integer id, SqlMapClient sqlmapClient);
+    public UserDTO addUser(UserDTO user, SqlMapClient client);
 
-    public void deleteUserById(Integer id, SqlMapClient sqlmapClient);
+    public UserDTO getUserById(Integer id, SqlMapClient client);
+
+    public void deleteUserById(Integer id, SqlMapClient client);
 }

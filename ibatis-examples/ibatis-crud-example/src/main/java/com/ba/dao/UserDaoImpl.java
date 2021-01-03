@@ -30,6 +30,18 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
+    public List<UserDTO> listUsers(SqlMapClient client) {
+
+        try {
+            return (List<UserDTO>) client.queryForList("user.getUsers");
+        } catch (SQLException e) {
+            System.out.println("DB işlemleri gerçekleşemedi! e:" + e);
+        }
+
+        return null;
+    }
+
+    @Override
     public UserDTO addUser(UserDTO user, SqlMapClient client) {
         try {
             Integer id = getNextUserId(client);
