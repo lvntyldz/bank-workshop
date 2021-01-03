@@ -13,7 +13,7 @@ public class Insert {
 
     public static void main(String[] args) throws Exception {
         UserDao dao = new UserDaoImpl();
-        Reader reader = Resources.getResourceAsReader("sql-maps-config.xml");
+        Reader reader = Resources.getResourceAsReader("batis-config.xml");
         SqlMapClient client = SqlMapClientBuilder.buildSqlMapClient(reader);
 
         UserDTO userDTO = new UserDTO(null, "Can", "can@can.com", "a12345", 1);

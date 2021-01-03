@@ -6,7 +6,7 @@
 
     <resultMap id="userResultMap" class="IBatisUser">
         <result property="id" column="ID"/>
-        <result property="name" column="NAME"/>
+        <result property="name" column="ISIM"/>
         <result property="email" column="EMAIL"/>
         <result property="password" column="PASSWORD"/>
         <result property="status" column="STATUS"/>
@@ -25,7 +25,7 @@
 	</select>
 
     <insert id="addUser" parameterClass="IBatisUser">
-		INSERT INTO USERINFO (ID,NAME,EMAIL,PASSWORD,STATUS)
+		INSERT INTO USERINFO (ID,ISIM,EMAIL,PASSWORD,STATUS)
 		 VALUES(#id#,#name#,#email#,#password#,#status#);
 	</insert>
 
