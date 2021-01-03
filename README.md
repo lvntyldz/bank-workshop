@@ -3,3 +3,4 @@
 * ##### Spring [doküman için tıklayın](./springboot-example/README.md)
 * ##### Training Examples [doküman için tıklayın](./training-examples/README.md)
 * ##### Axis2 SOAP Examples [doküman için tıklayın](./axis2-soap-examples/README.md)
+* ##### IBatis  Examples [doküman için tıklayın](./ibatis-examples/README.md)
