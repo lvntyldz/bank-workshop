@@ -1,3 +1,5 @@
+* ### Açıklamalar
+
 - Hibernate gibi bir persistence frameworküdür.
 - Persistence layerda Data map işlemleri için kullanılır.
 - MyBatis ise IBatis ten fork alınarak geliştirilmiştir.
